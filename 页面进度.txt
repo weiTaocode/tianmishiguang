@@ -1,0 +1,15 @@
+已做
+works.html 学员作品
+apply.html 报名入学
+yh_lesson.html 优惠课程 
+teachers_International.html国际师资
+
+
+PS:创业案例和杰出校友 PC合并落地页  三个页面先不做 
+
+PS:首页 校区 国际师资详情页 我来做
+
+头部底部模板在index.html
+用到的新图在images里面新建放一个文件夹 存放在里面
+
+   

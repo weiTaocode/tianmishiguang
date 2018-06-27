@@ -1,0 +1,195 @@
+.m-idx-common-header .title {
+  position: relative;
+  color: #7F523C;
+  font-size: 20px;
+  text-align: center; }
+.m-idx-common-header .tip {
+  color: #333;
+  font-size: 36px;
+  text-align: center;
+  position: relative;
+  font-weight: bold; }
+  .m-idx-common-header .tip .btn-more {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 30px;
+    color: #fff;
+    font-size: 16px;
+    background: #7F523C;
+    border-radius: 999px;
+    padding: 0 28px;
+    transition: background .3s ease;
+    font-weight: normal; }
+    .m-idx-common-header .tip .btn-more:hover {
+      background: rgba(127, 82, 59, 0.8); }
+
+.m-idx-apply {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 -1px 8px 2px #ddd; }
+  .m-idx-apply .left-banner-word {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #666;
+    font-size: 20px;
+    line-height: 30px;
+    flex-shrink: 0; }
+  .m-idx-apply .apply-form {
+    flex: 1; }
+    .m-idx-apply .apply-form form {
+      padding: 0 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .m-idx-apply .apply-form form .file-group {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 60px;
+        width: 300px;
+        padding: 10px;
+        border: 1px solid #999;
+        /*margin-bottom: 20px;*/ }
+        .m-idx-apply .apply-form form .file-group .label {
+          display: block;
+          width: 30px;
+          height: 30px;
+          -ms-flex-negative: 0;
+          flex-shrink: 0; }
+          .m-idx-apply .apply-form form .file-group .label.name {
+            background: url("../images/common/form-name.png") no-repeat center center;
+            -moz-background-size: cover;
+            background-size: cover; }
+          .m-idx-apply .apply-form form .file-group .label.phone {
+            background: url("../images/common/form-phone.png") no-repeat center center;
+            -moz-background-size: cover;
+            background-size: cover; }
+          .m-idx-apply .apply-form form .file-group .label.weixin {
+            background: url("../images/common/form-weixin.png") no-repeat center center;
+            -moz-background-size: cover;
+            background-size: cover; }
+        .m-idx-apply .apply-form form .file-group .file-input {
+          -webkit-box-flex: 1;
+          -moz-box-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          line-height: 40px;
+          height: 40px;
+          margin-left: 10px;
+          padding: 0 10px 0 30px;
+          font-size: 14px;
+          color: #666;
+          border: none;
+          border-left: 1px solid #999; }
+      .m-idx-apply .apply-form form .btn-submit {
+        display: block;
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        background: #7F523C;
+        color: #fff;
+        text-align: center;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        font-size: 16px; }
+        .m-idx-apply .apply-form form .btn-submit:hover {
+          background: rgba(127, 82, 60, 0.8); }
+
+.m-idx-schoolmap {
+  padding: 60px 0; }
+  .m-idx-schoolmap .schoolmap-container {
+    margin-top: 40px;
+    display: flex;
+    background: #fafafa; }
+    .m-idx-schoolmap .schoolmap-container .left-map {
+      width: 670px;
+      height: 542px;
+      flex-shrink: 0; }
+    .m-idx-schoolmap .schoolmap-container .right-message {
+      flex: 1;
+      padding: 20px 40px; }
+      .m-idx-schoolmap .schoolmap-container .right-message .area-msg {
+        width: 100%;
+        height: 200px;
+        padding: 20px 30px;
+        background: #fff;
+        border-left: 5px solid #7F523C; }
+        .m-idx-schoolmap .schoolmap-container .right-message .area-msg h5 {
+          font-size: 18px;
+          color: #333; }
+        .m-idx-schoolmap .schoolmap-container .right-message .area-msg .address, .m-idx-schoolmap .schoolmap-container .right-message .area-msg .traffic {
+          font-size: 14px;
+          line-height: 18px;
+          color: #333;
+          margin-top: 5px; }
+        .m-idx-schoolmap .schoolmap-container .right-message .area-msg .traffic {
+          color: #666; }
+        .m-idx-schoolmap .schoolmap-container .right-message .area-msg .tel, .m-idx-schoolmap .schoolmap-container .right-message .area-msg .work-time {
+          font-size: 12px;
+          color: #666;
+          margin-top: 5px; }
+        .m-idx-schoolmap .schoolmap-container .right-message .area-msg .tel {
+          margin-top: 20px; }
+      .m-idx-schoolmap .schoolmap-container .right-message .school-toggle-list {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap; }
+        .m-idx-schoolmap .schoolmap-container .right-message .school-toggle-list li {
+          width: 124px;
+          line-height: 40px;
+          height: 40px;
+          background: #fff;
+          text-align: center;
+          font-size: 18px;
+          color: #333;
+          margin-right: 37px;
+          margin-bottom: 37px;
+          cursor: default;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis; }
+          .m-idx-schoolmap .schoolmap-container .right-message .school-toggle-list li:nth-child(3n+0) {
+            margin-right: 0; }
+          .m-idx-schoolmap .schoolmap-container .right-message .school-toggle-list li.s-active, .m-idx-schoolmap .schoolmap-container .right-message .school-toggle-list li:hover {
+            background: #7F523C;
+            color: #fff; }
+
+.m-school-environment {
+  padding: 60px 0; }
+  .m-school-environment .title {
+    font-size: 40px;
+    text-align: center;
+    color: #333; }
+  .m-school-environment .img-list {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap; }
+    .m-school-environment .img-list li {
+      width: 370px;
+      height: 250px;
+      overflow: hidden;
+      margin-right: 45px;
+      margin-bottom: 45px; }
+      .m-school-environment .img-list li:nth-child(3n+0) {
+        margin-right: 0; }
+      .m-school-environment .img-list li:hover img {
+        transform: scale(1.1); }
+      .m-school-environment .img-list li img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: all .5s ease;
+        transform: scale(1); }
+
+/*# sourceMappingURL=school.css.map */

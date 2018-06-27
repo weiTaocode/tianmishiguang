@@ -110,8 +110,72 @@
     padding-top: 30px; }
     .m-content .content .line {
       color: #333;
-      font-size: 14px;
-      line-height: 28px;
+      font-size: 20px;
+      line-height: 40px;
       margin-bottom: 5px; }
+
+.m-apply-banner {
+  height: 460px;
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
+  .m-apply-banner .banner-img {
+    height: 100%;
+    position: relative; }
+    .m-apply-banner .banner-img img {
+      display: block;
+      width: 1920px;
+      height: 460px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%); }
+  .m-apply-banner .banner-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .m-apply-banner .banner-content .tm1 {
+      font-size: 32px;
+      color: #fff; }
+    .m-apply-banner .banner-content .tm2 {
+      margin-top: 20px; }
+      .m-apply-banner .banner-content .tm2 em {
+        font-size: 40px;
+        color: #fff;
+        display: block;
+        text-align: center;
+        line-height: 40px; }
+      .m-apply-banner .banner-content .tm2 small {
+        display: block;
+        font-size: 20px;
+        color: #fff;
+        text-align: center; }
+    .m-apply-banner .banner-content .tm-list {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center; }
+      .m-apply-banner .banner-content .tm-list li {
+        margin-right: 55px; }
+        .m-apply-banner .banner-content .tm-list li:last-child {
+          margin-right: 0; }
+        .m-apply-banner .banner-content .tm-list li .name {
+          font-size: 30px;
+          line-height: 30px;
+          color: #fff;
+          text-align: center; }
+        .m-apply-banner .banner-content .tm-list li .num {
+          font-size: 40px;
+          line-height: 40px;
+          color: #fff;
+          text-align: center;
+          margin-top: 20px; }
 
 /*# sourceMappingURL=apply.css.map */

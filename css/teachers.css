@@ -1,0 +1,129 @@
+.m-iteacher-list .iteacher-list {
+  display: flex; }
+  .m-iteacher-list .iteacher-list > li {
+    flex: 1;
+    flex-shrink: 0;
+    background: #fafafa; }
+    .m-iteacher-list .iteacher-list > li a {
+      display: block;
+      width: 100%;
+      padding-top: 140.625%;
+      position: relative;
+      overflow: hidden; }
+      .m-iteacher-list .iteacher-list > li a img {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%; }
+
+.m-teachers-nav-list {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .m-teachers-nav-list .nav-item {
+    font-size: 30px;
+    color: #333;
+    line-height: 48px;
+    border-bottom: 4px solid transparent;
+    padding: 0 4px; }
+    .m-teachers-nav-list .nav-item.s-active, .m-teachers-nav-list .nav-item:hover {
+      color: #7F523C;
+      border-bottom-color: #7F523C; }
+  .m-teachers-nav-list span {
+    display: block;
+    width: 2px;
+    height: 30px;
+    background: #333;
+    margin: 0 30px; }
+
+.m-nteacher-list .nteacher-item {
+  margin-bottom: 80px;
+  display: flex; }
+  .m-nteacher-list .nteacher-item .left-nteacher {
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: block; }
+    .m-nteacher-list .nteacher-item .left-nteacher .img {
+      width: 400px;
+      height: 700px;
+      overflow: hidden; }
+      .m-nteacher-list .nteacher-item .left-nteacher .img img {
+        display: block;
+        width: 100%;
+        height: 100%; }
+    .m-nteacher-list .nteacher-item .left-nteacher .msg {
+      position: absolute;
+      left: 0;
+      bottom: 140px;
+      width: 100%;
+      height: 100%;
+      background: #CCC;
+      padding: 20px;
+      transform: translateY(100%);
+      transition: all .8s ease-in;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; }
+      .m-nteacher-list .nteacher-item .left-nteacher .msg .name {
+        font-size: 20px;
+        color: #333;
+        width: 100%; }
+        .m-nteacher-list .nteacher-item .left-nteacher .msg .name .english, .m-nteacher-list .nteacher-item .left-nteacher .msg .name .chinese {
+          display: block;
+          line-height: 30px;
+          text-align: center;
+          transition: all .8s ease-in; }
+      .m-nteacher-list .nteacher-item .left-nteacher .msg .honor-list {
+        width: 100%;
+        margin-top: 20px; }
+        .m-nteacher-list .nteacher-item .left-nteacher .msg .honor-list li {
+          font-size: 16px;
+          line-height: 30px;
+          color: #7F523C;
+          text-align: center;
+          margin-bottom: 5px; }
+          .m-nteacher-list .nteacher-item .left-nteacher .msg .honor-list li:last-child {
+            margin-bottom: 0; }
+    .m-nteacher-list .nteacher-item .left-nteacher:hover .msg {
+      transform: translateY(0);
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.8);
+      justify-content: center; }
+      .m-nteacher-list .nteacher-item .left-nteacher:hover .msg .english, .m-nteacher-list .nteacher-item .left-nteacher:hover .msg .chinese {
+        color: #7F523C; }
+      .m-nteacher-list .nteacher-item .left-nteacher:hover .msg .honor-list li {
+        color: #333; }
+  .m-nteacher-list .nteacher-item .works-list {
+    flex: 1;
+    margin-left: 20px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap; }
+    .m-nteacher-list .nteacher-item .works-list li {
+      width: 380px;
+      height: 320px;
+      overflow: hidden;
+      margin-top: 20px;
+      margin-right: 20px; }
+      .m-nteacher-list .nteacher-item .works-list li:nth-child(1), .m-nteacher-list .nteacher-item .works-list li:nth-child(2) {
+        margin-top: 0; }
+      .m-nteacher-list .nteacher-item .works-list li:nth-child(even) {
+        margin-right: 0; }
+      .m-nteacher-list .nteacher-item .works-list li a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+        .m-nteacher-list .nteacher-item .works-list li a img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          transition: all .5s linear;
+          transform: scale(1); }
+      .m-nteacher-list .nteacher-item .works-list li:hover img {
+        transform: scale(1.1); }
+
+/*# sourceMappingURL=teachers.css.map */

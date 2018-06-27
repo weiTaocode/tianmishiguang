@@ -1,196 +1,2152 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>甜蜜时光首页</title>
-<meta name="description" content="">
-<meta name="keywords" content="">
-<link href="css/common.css" rel="stylesheet"/>
-<script type="text/javascript" src="js/jquery.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>甜蜜时光首页</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/common.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
 </head>
+
 <body>
     <!-- 公共头部 -->
-    <header class="cm-header">
-    	<div class="cm-container">
-    		<a class="logo" href="index.html">
-    			<img src="images/common/header-logo.png"/>
-    		</a>
-    		<div class="u-select-area ml20 mr20">
-    			<span class="area-show">深圳</span>
-    			<ul class="area-select ">
-    				<li class="s-active" data-city="sz">深圳</li>
-    				<li data-city="cq">重庆</li>
-    				<li data-city="gz">广州</li>
-    				<li data-city="sh">上海</li>
-    				<li data-city="wlmq">乌鲁木齐</li>
-    			</ul>
-    		</div>
-    		<ul class="u-nav-list">
-    			<li  class="active">
-    				<a href="index.html">首页</a>
-    			</li>
-    			<li>
-    				<a href="javascript:;">大咖校友</a>
-    				<div class="small-menu">
-    					<a href="javascript:;" title="创业案例">创业案例</a>
-    					<a href="javascript:;" title="学员作品">学员作品</a>
-    					<a href="javascript:;" title="焙客俱乐部">焙客俱乐部</a>
-    				</div>
-    			</li>
-    			<li>
-    				<a href="javascript:;">创业课程</a>
-    				<div class="small-menu">
-    					<a href="javascript:;" title="创业开店全能班">创业开店全能班</a>
-    					<a href="javascript:;" title="创业私房工作室">创业私房工作室</a>
-    					<a href="javascript:;" title="高端烘焙私房创业班">高端烘焙私房创业班</a>
-    					<a href="javascript:;" title="精品法式私房创业班">精品法式私房创业班</a>
-    					<a href="javascript:;" title="创意私房创业班">创意私房创业班</a>
-    				</div>
-    			</li>
-    			<li><a href="javascript:;">国际师资</a></li>
-    			<li>
-    				<a href="apply.html">报名入学</a>
-    				<div class="small-menu">
-    					<a href="javascript:;" title="报名方式">报名方式</a>
-    					<a href="javascript:;" title="报名须知">报名须知</a>
-    					<a href="javascript:;" title="优惠套餐">优惠套餐</a>
-    				</div>
-    			</li>
-    			<li><a href="javascript:;">社区</a></li>
-    			<li><a href="javascript:;">关于我们</a></li>
-    		</ul>
+  <header class="cm-header">
+        <div class="cm-container">
+            <a class="logo" href="index.html">
+                <img src="images/common/header-logo.png"/>
+            </a>
+            <div class="u-select-area ml20 mr20">
+                <span class="area-show">未知城市</span>
+                <ul class="area-select ">
+                    <li data-city="sz">深圳</li>
+                    <li data-city="cq">重庆</li>
+                    <li data-city="gz">广州</li>
+                    <li data-city="sh">上海</li>
+                    <li data-city="wlmq">乌鲁木齐</li>
+                </ul>
+            </div>
+            <ul class="u-nav-list">
+                <li  class="active">
+                    <a href="index.html">首页</a>
+                </li>
+                <li>
+                    <a href="alumnus.html">大咖校友</a>
+                    <div class="small-menu">
+                        <a href="case.html" title="创业案例">创业案例</a>
+                        <a href="works.html" title="学员作品">学员作品</a>
+                        <a href="alumnus.html" title="杰出校友">杰出校友</a>
+                        <a href="javascript:;" title="焙客俱乐部">焙客俱乐部</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;">创业课程</a>
+                    <div class="small-menu">
+                        <a href="javascript:;" title="创业开店全能班">创业开店全能班</a>
+                        <a href="javascript:;" title="创业私房工作室">创业私房工作室</a>
+                        <a href="javascript:;" title="高端烘焙私房创业班">高端烘焙私房创业班</a>
+                        <a href="javascript:;" title="精品法式私房创业班">精品法式私房创业班</a>
+                        <a href="javascript:;" title="创意私房创业班">创意私房创业班</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="teachers_International.html">国际师资</a>
+                    <div class="small-menu">
+                        <a href="teachers_International.html" title="国际大师">国际大师</a>
+                        <a href="inte_teach.html" title="教研团队">教研团队</a>
+                        <a href="teach_team.html" title="讲师团队">讲师团队</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="apply.html">报名入学</a>
+                    <div class="small-menu">
+                        <a href="apply.html" title="报名方式">报名方式</a>
+                        <a href="apply.html" title="报名须知">报名须知</a>
+                        <a href="yh_lesson.html" title="优惠套餐">优惠套餐</a>
+                    </div>
+                </li>
+                <li><a href="school.html">校区</a></li>
+                <li><a href="about.html">关于我们</a></li>
+            </ul>
 
-    		<span class="phone-num">400-1689-969</span>
-    	</div>
+            <span class="phone-num">400-1689-969</span>
+        </div>
     </header>
     <section class="cm-main">
-    	
+        <div class="cm-carousel">
+            <div class="swiper-container swiper-banner">
+                <div class="swiper-wrapper">
+                    <a class="swiper-slide" href="javascript:;">
+                        <!-- 1920 * 540 -->
+                        <img src="upload/idx-car1.png" alt="" />
+                    </a>
+                    <a class="swiper-slide" href="javascript:;">
+                        <img src="upload/idx-car1.png" alt="" />
+                    </a>
+                    <a class="swiper-slide" href="javascript:;">
+                        <img src="upload/idx-car1.png" alt="" />
+                    </a>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="cm-container">
+            <div class="m-idx-apply">
+                <span class="left-banner-word">预约免费听课<br/>(价值500元)</span>
+                <div class="apply-form">
+                    <form>
+                        <div class="file-group">
+                            <label for="u-name" class="label name"></label>
+                            <input type="text" name="" placeholder="请输入您的昵称" class="file-input" id="u-name" />
+                        </div>
+                        <div class="file-group">
+                            <label for="u-phone" class="label phone"></label>
+                            <input type="text" name="" placeholder="请输入您的手机号码" class="file-input" id="u-phone" />
+                        </div>
+                        <a class="btn-submit" href="javascript:;">立即预约</a>
+                    </form>
+                </div>
+            </div>
+            <ul class="m-lesson-list">
+                <!-- 初始化的时候所有数值都用data-max这个值。即最大值 -->
+                <li class="lesson-item status-scroll" data-max="24" >
+                    <p class="lesson-title">29天烘焙创业班</p>
+                    <p class="num">
+                        <span>限额24人</span>
+                        <b>剩余<em>24</em>名额</b>
+                    </p>
+                </li>
+                <li class="lesson-item status-scroll" data-max="24" >
+                    <p class="lesson-title">29天烘焙创业班</p>
+                    <p class="num">
+                        <span>限额24人</span>
+                        <b>剩余<em>24</em>名额</b>
+                    </p>
+                </li>
+                <li class="lesson-item status-scroll" data-max="24" >
+                    <p class="lesson-title">29天烘焙创业班</p>
+                    <p class="num">
+                        <span>限额24人</span>
+                        <b>剩余<em>24</em>名额</b>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="m-section-block m-banner-carousel2">
+            <div class="bg-img">
+                <img src="images/idx-bg2.png" />
+            </div>
+            <!-- 这个轮播比较特殊，左侧边栏数据需要在js里面拼接 -->
+            <div class="cm-container carousel-box">
+                <div class="m-idx-common-header">
+                    <p class="title">——创业课程——</p>
+                    <p class="tip">以成功开店为课程设计唯一标准</p>
+                </div>
+                <div class="carousel-container">
+                    <div class="swiper-container swiper-lesson">
+                        <ul class="swiper-wrapper">
+                            <!-- 单个li限制3个图片 -->
+                            <li class="swiper-slide">
+                                <a href="javascript:;">
+                                    <!-- 322 * 538 -->
+                                    <img src="upload/idx-lesson1.png" />
+                                </a>
+                                <a href="javascript:;">
+                                        <img src="upload/idx-lesson2.png"/>
+                                    </a>
+                                <a href="javascript:;">
+                                        <img src="upload/idx-lesson3.png"/>
+                                    </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="javascript:;">
+                                        <img src="upload/idx-lesson1.png"/>
+                                    </a>
+                                <a href="javascript:;">
+                                        <img src="upload/idx-lesson2.png"/>
+                                    </a>
+                                <a href="javascript:;">
+                                        <img src="upload/idx-lesson3.png"/>
+                                    </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="javascript:;">
+                                        <img src="upload/idx-lesson1.png"/>
+                                    </a>
+                                <a href="javascript:;">
+                                        <img src="upload/idx-lesson2.png"/>
+                                    </a>
+                                <a href="javascript:;">
+                                        <img src="upload/idx-lesson3.png"/>
+                                    </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="javascript:;">
+                                        <img src="upload/idx-lesson1.png"/>
+                                    </a>
+                                <a href="javascript:;">
+                                        <img src="upload/idx-lesson2.png"/>
+                                    </a>
+                                <a href="javascript:;">
+                                        <img src="upload/idx-lesson3.png"/>
+                                    </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="javascript:;">
+                                        <img src="upload/idx-lesson1.png"/>
+                                    </a>
+                                <a href="javascript:;">
+                                        <img src="upload/idx-lesson2.png"/>
+                                    </a>
+                                <a href="javascript:;">
+                                        <img src="upload/idx-lesson3.png"/>
+                                    </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-section-block">
+            <div class="m-idx-achievement">
+                <div class="cm-container">
+                    <div class="m-idx-common-header">
+                        <p class="title">——创业数据——</p>
+                        <p class="tip">有温度的真实数据，创业的放心选择</p>
+                    </div>
+                    <div class="achievement-list">
+                        <div class="achievement-item">
+                            <span class="circle"></span>
+                            <span class="data"><b>6</b>年</span>
+                            <p class="b-word">专注烘焙创业教育</p>
+                            <p class="s-word">烘焙创业模式行业首创</p>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="circle"></span>
+                            <span class="data"><b>18</b>家</span>
+                            <p class="b-word">全国连锁分校</p>
+                            <p class="s-word">校区数量位居行业之首</p>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="circle"></span>
+                            <span class="data"><b>48,000</b>+</span>
+                            <p class="b-word">累计毕业学员</p>
+                            <p class="s-word">毕业即成为烘焙行业精英</p>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="circle"></span>
+                            <span class="data"><b>30,000</b>+</span>
+                            <p class="b-word">创业成功学员</p>
+                            <p class="s-word">全国学员超过90%创业成功</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-section-block">
+            <div class="m-idx-works-block">
+                <div class="cm-container">
+                    <div class="m-idx-common-header">
+                        <p class="title">——学员作品——</p>
+                        <p class="tip">记录你每一次的进步</p>
+                    </div>
+                    <div class="works-box">
+                        <!-- 初始化 第一项加类s-active -->
+                        <ul class="menu-list">
+                            <li class="s-active" data-tar="item1">法式私房蛋糕</li>
+                            <li data-tar="item2">创意甜品</li>
+                            <li data-tar="item3">软欧面包</li>
+                            <li data-tar="item4">英式翻糖蛋糕</li>
+                            <li data-tar="item5">法式西点</li>
+                            <li data-tar="item6">手工巧克力</li>
+                        </ul>
+                        <div class="works-list">
+                            <!-- 初始化第一项添加行内样式display:block -->
+                            <div class="works-item-box  item1" style="display: block;">
+                                <div class="works-item">
+                                    <div class="left-slide">
+                                        <div class="top">
+                                            <a class="link" href="javascript:;">
+                                                <!-- 305 * 430 -->
+                                                <img src="upload/idx-works1.png" alt="" />
+                                            </a>
+                                            <div class="detail">
+                                                <p class="label">可可法式</p>
+                                                <p class="title">法式私房蛋糕</p>
+                                                <a href="javascript:void(0)" class="btn">查看详情</a>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="link" href="javascript:;">
+                                                <!-- 390 * 190 -->
+                                                <img src="upload/idx-works8.png">
+                                            </a>
+                                            <a class="link" href="javascript:;">
+                                                <!-- 188*190 -->
+                                                <img src="upload/idx-works9.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="right-slide">
+                                        <div class="top">
+                                            <!--  188 * 390-->
+                                            <a href="javascript:void(0)" class="link">
+                                                <img src="upload/idx-works2.png"/>
+                                            </a>
+                                            <!--  188 * 390-->
+                                            <a href="javascript:void(0)" class="link">
+                                                <img src="upload/idx-works2.png"/>
+                                            </a>
+                                            <a href="javascript:void(0)" class="link">
+                                                <img src="upload/idx-works4.png"/>
+                                            </a>
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="link" href="javascript:void(0)">
+                                                <!--  188 * 390-->
+                                                <img src="upload/idx-works5.png">
+                                            </a>
+                                            <a class="link" href="javascript:void(0)">
+                                                <!-- 390 * 310 -->
+                                                <img src="upload/idx-works7.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="works-item-box  item2">
+                                <div class="works-item">
+                                    <div class="left-slide">
+                                        <div class="top">
+                                            <a class="link" href="javascript:;">
+                                                <!-- 305 * 430 -->
+                                                <img src="upload/idx-works1.png" alt="" />
+                                            </a>
+                                            <div class="detail">
+                                                <p class="label">可可法式</p>
+                                                <p class="title">创意甜品</p>
+                                                <a href="javascript:void(0)" class="btn">查看详情</a>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="link" href="javascript:;">
+                                                <!-- 390 * 190 -->
+                                                <img src="upload/idx-works8.png">
+                                            </a>
+                                            <a class="link" href="javascript:;">
+                                                <!-- 188*190 -->
+                                                <img src="upload/idx-works9.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="right-slide">
+                                        <div class="top">
+                                            <!--  188 * 390-->
+                                            <a href="javascript:void(0)" class="link">
+                                            <img src="upload/idx-works2.png"/>
+                                        </a>
+                                            <!--  188 * 390-->
+                                            <a href="javascript:void(0)" class="link">
+                                            <img src="upload/idx-works2.png"/>
+                                        </a>
+                                            <a href="javascript:void(0)" class="link">
+                                            <img src="upload/idx-works4.png"/>
+                                        </a>
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="link" href="javascript:void(0)">
+                                                <!--  188 * 390-->
+                                                <img src="upload/idx-works5.png">
+                                            </a>
+                                            <a class="link" href="javascript:void(0)">
+                                                <!-- 390 * 310 -->
+                                                <img src="upload/idx-works7.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="works-item-box  item3">
+                                <div class="works-item">
+                                    <div class="left-slide">
+                                        <div class="top">
+                                            <a class="link" href="javascript:;">
+                                                <!-- 305 * 430 -->
+                                                <img src="upload/idx-works1.png" alt="" />
+                                            </a>
+                                            <div class="detail">
+                                                <p class="label">可可法式</p>
+                                                <p class="title">软欧面包</p>
+                                                <a href="javascript:void(0)" class="btn">查看详情</a>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="link" href="javascript:;">
+                                                <!-- 390 * 190 -->
+                                                <img src="upload/idx-works8.png">
+                                            </a>
+                                            <a class="link" href="javascript:;">
+                                                <!-- 188*190 -->
+                                                <img src="upload/idx-works9.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="right-slide">
+                                        <div class="top">
+                                            <!--  188 * 390-->
+                                            <a href="javascript:void(0)" class="link">
+                                            <img src="upload/idx-works2.png"/>
+                                        </a>
+                                            <!--  188 * 390-->
+                                            <a href="javascript:void(0)" class="link">
+                                            <img src="upload/idx-works2.png"/>
+                                        </a>
+                                            <a href="javascript:void(0)" class="link">
+                                            <img src="upload/idx-works4.png"/>
+                                        </a>
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="link" href="javascript:void(0)">
+                                                <!--  188 * 390-->
+                                                <img src="upload/idx-works5.png">
+                                            </a>
+                                            <a class="link" href="javascript:void(0)">
+                                                <!-- 390 * 310 -->
+                                                <img src="upload/idx-works7.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="works-item-box  item4">
+                                <div class="works-item">
+                                    <div class="left-slide">
+                                        <div class="top">
+                                            <a class="link" href="javascript:;">
+                                                <!-- 305 * 430 -->
+                                                <img src="upload/idx-works1.png" alt="" />
+                                            </a>
+                                            <div class="detail">
+                                                <p class="label">可可法式</p>
+                                                <p class="title">英式翻糖蛋糕</p>
+                                                <a href="javascript:void(0)" class="btn">查看详情</a>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="link" href="javascript:;">
+                                                <!-- 390 * 190 -->
+                                                <img src="upload/idx-works8.png">
+                                            </a>
+                                            <a class="link" href="javascript:;">
+                                                <!-- 188*190 -->
+                                                <img src="upload/idx-works9.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="right-slide">
+                                        <div class="top">
+                                            <!--  188 * 390-->
+                                            <a href="javascript:void(0)" class="link">
+                                            <img src="upload/idx-works2.png"/>
+                                        </a>
+                                            <!--  188 * 390-->
+                                            <a href="javascript:void(0)" class="link">
+                                            <img src="upload/idx-works2.png"/>
+                                        </a>
+                                            <a href="javascript:void(0)" class="link">
+                                            <img src="upload/idx-works4.png"/>
+                                        </a>
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="link" href="javascript:void(0)">
+                                                <!--  188 * 390-->
+                                                <img src="upload/idx-works5.png">
+                                            </a>
+                                            <a class="link" href="javascript:void(0)">
+                                                <!-- 390 * 310 -->
+                                                <img src="upload/idx-works7.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="works-item-box  item5">
+                                <div class="works-item">
+                                    <div class="left-slide">
+                                        <div class="top">
+                                            <a class="link" href="javascript:;">
+                                                <!-- 305 * 430 -->
+                                                <img src="upload/idx-works1.png" alt="" />
+                                            </a>
+                                            <div class="detail">
+                                                <p class="label">可可法式</p>
+                                                <p class="title">法式西点</p>
+                                                <a href="javascript:void(0)" class="btn">查看详情</a>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="link" href="javascript:;">
+                                                <!-- 390 * 190 -->
+                                                <img src="upload/idx-works8.png">
+                                            </a>
+                                            <a class="link" href="javascript:;">
+                                                <!-- 188*190 -->
+                                                <img src="upload/idx-works9.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="right-slide">
+                                        <div class="top">
+                                            <!--  188 * 390-->
+                                            <a href="javascript:void(0)" class="link">
+                                            <img src="upload/idx-works2.png"/>
+                                        </a>
+                                            <!--  188 * 390-->
+                                            <a href="javascript:void(0)" class="link">
+                                            <img src="upload/idx-works2.png"/>
+                                        </a>
+                                            <a href="javascript:void(0)" class="link">
+                                            <img src="upload/idx-works4.png"/>
+                                        </a>
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="link" href="javascript:void(0)">
+                                                <!--  188 * 390-->
+                                                <img src="upload/idx-works5.png">
+                                            </a>
+                                            <a class="link" href="javascript:void(0)">
+                                                <!-- 390 * 310 -->
+                                                <img src="upload/idx-works7.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="works-item-box  item6">
+                                <div class="works-item">
+                                    <div class="left-slide">
+                                        <div class="top">
+                                            <a class="link" href="javascript:;">
+                                                <!-- 305 * 430 -->
+                                                <img src="upload/idx-works1.png" alt="" />
+                                            </a>
+                                            <div class="detail">
+                                                <p class="label">可可法式</p>
+                                                <p class="title">手工巧克力</p>
+                                                <a href="javascript:void(0)" class="btn">查看详情</a>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="link" href="javascript:;">
+                                                <!-- 390 * 190 -->
+                                                <img src="upload/idx-works8.png">
+                                            </a>
+                                            <a class="link" href="javascript:;">
+                                                <!-- 188*190 -->
+                                                <img src="upload/idx-works9.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="right-slide">
+                                        <div class="top">
+                                            <!--  188 * 390-->
+                                            <a href="javascript:void(0)" class="link">
+                                            <img src="upload/idx-works2.png"/>
+                                        </a>
+                                            <!--  188 * 390-->
+                                            <a href="javascript:void(0)" class="link">
+                                            <img src="upload/idx-works2.png"/>
+                                        </a>
+                                            <a href="javascript:void(0)" class="link">
+                                            <img src="upload/idx-works4.png"/>
+                                        </a>
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="link" href="javascript:void(0)">
+                                                <!--  188 * 390-->
+                                                <img src="upload/idx-works5.png">
+                                            </a>
+                                            <a class="link" href="javascript:void(0)">
+                                                <!-- 390 * 310 -->
+                                                <img src="upload/idx-works7.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-section-block">
+            <!-- 1920 * 830 -->
+            <div class="m-idx-teachers" style="background: url('images/idx-teachers-bg.png')no-repeat center center;background-size: cover">
+                <div class="cm-container">
+                    <div class="m-idx-common-header">
+                        <p class="title">——师资力量——</p>
+                        <p class="tip">行业精英，多年积累倾囊相授</p>
+                    </div>
+                    <ul class="menu-list">
+                        <!-- 默认初始化 第一项加类s-active -->
+                        <!-- data-tar 的值与下面的列表的列相对应 -->
+                        <li class="s-active" data-tar ="item1">国际师资</li>
+                        <li data-tar ="item2">教研团队</li>
+                        <li data-tar ="item3">讲课团队</li>
+                    </ul>
+                    <div class="teachers-list">
+                        <!-- 第一项默认初始化时添加行内样式 display:block -->
+                        <div class="item item1" style="display: block;">
+                            <a href="javascript:void(0);">
+                                <div class="img">
+                                    <!-- 190 * 310 -->
+                                    <img src="upload/idx-teacher1.png" alt="">
+                                </div>
+                                <div class="msg">
+                                    <p class="name-english">Nina Tarasova
+                                    </p>
+                                    <p class="name-chinese">卡洛斯·李斯提
+                                    </p>
+                                    <ul class="honor-list">
+                                        <li>
+                                            <p class="chinese">韩国顶尖裱花大师
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="chinese"> 韩国裱花蛋糕设计协会会长
+                                            </p>
+                                            <p class="english">KCDA-Korea Cake Design Association</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);">
+                                <div class="img">
+                                    <!-- 190 * 310 -->
+                                    <img src="upload/idx-teacher1.png" alt="">
+                                </div>
+                                <div class="msg">
+                                    <p class="name-english">Nina Tarasova
+                                    </p>
+                                    <p class="name-chinese">卡洛斯·李斯提
+                                    </p>
+                                    <ul class="honor-list">
+                                        <li>
+                                            <p class="chinese">韩国顶尖裱花大师
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="chinese"> 韩国裱花蛋糕设计协会会长
+                                            </p>
+                                            <p class="english">KCDA-Korea Cake Design Association</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);">
+                                <div class="img">
+                                    <!-- 190 * 310 -->
+                                    <img src="upload/idx-teacher1.png" alt="">
+                                </div>
+                                <div class="msg">
+                                    <p class="name-english">Nina Tarasova
+                                    </p>
+                                    <p class="name-chinese">卡洛斯·李斯提
+                                    </p>
+                                    <ul class="honor-list">
+                                        <li>
+                                            <p class="chinese">韩国顶尖裱花大师
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="chinese"> 韩国裱花蛋糕设计协会会长
+                                            </p>
+                                            <p class="english">KCDA-Korea Cake Design Association</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);">
+                                <div class="img">
+                                    <!-- 190 * 310 -->
+                                    <img src="upload/idx-teacher1.png" alt="">
+                                </div>
+                                <div class="msg">
+                                    <p class="name-english">Nina Tarasova
+                                    </p>
+                                    <p class="name-chinese">卡洛斯·李斯提
+                                    </p>
+                                    <ul class="honor-list">
+                                        <li>
+                                            <p class="chinese">韩国顶尖裱花大师
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="chinese"> 韩国裱花蛋糕设计协会会长
+                                            </p>
+                                            <p class="english">KCDA-Korea Cake Design Association</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);">
+                                <div class="img">
+                                    <!-- 190 * 310 -->
+                                    <img src="upload/idx-teacher1.png" alt="">
+                                </div>
+                                <div class="msg">
+                                    <p class="name-english">Nina Tarasova
+                                    </p>
+                                    <p class="name-chinese">卡洛斯·李斯提
+                                    </p>
+                                    <ul class="honor-list">
+                                        <li>
+                                            <p class="chinese">韩国顶尖裱花大师
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="chinese"> 韩国裱花蛋糕设计协会会长
+                                            </p>
+                                            <p class="english">KCDA-Korea Cake Design Association</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);">
+                                <div class="img">
+                                    <!-- 190 * 310 -->
+                                    <img src="upload/idx-teacher1.png" alt="">
+                                </div>
+                                <div class="msg">
+                                    <p class="name-english">Nina Tarasova
+                                    </p>
+                                    <p class="name-chinese">卡洛斯·李斯提
+                                    </p>
+                                    <ul class="honor-list">
+                                        <li>
+                                            <p class="chinese">韩国顶尖裱花大师
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="chinese"> 韩国裱花蛋糕设计协会会长
+                                            </p>
+                                            <p class="english">KCDA-Korea Cake Design Association</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                         <div class="item item2">
+                            <a href="javascript:void(0);">
+                                <div class="img">
+                                    <!-- 190 * 310 -->
+                                    <img src="upload/idx-teacher1.png" alt="">
+                                </div>
+                                <div class="msg">
+                                    <p class="name-english">Nina Tarasova
+                                    </p>
+                                    <p class="name-chinese">卡洛斯·李斯提
+                                    </p>
+                                    <ul class="honor-list">
+                                        <li>
+                                            <p class="chinese">韩国顶尖裱花大师
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="chinese"> 韩国裱花蛋糕设计协会会长
+                                            </p>
+                                            <p class="english">KCDA-Korea Cake Design Association</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);">
+                                <div class="img">
+                                    <!-- 190 * 310 -->
+                                    <img src="upload/idx-teacher1.png" alt="">
+                                </div>
+                                <div class="msg">
+                                    <p class="name-english">Nina Tarasova
+                                    </p>
+                                    <p class="name-chinese">卡洛斯·李斯提
+                                    </p>
+                                    <ul class="honor-list">
+                                        <li>
+                                            <p class="chinese">韩国顶尖裱花大师
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="chinese"> 韩国裱花蛋糕设计协会会长
+                                            </p>
+                                            <p class="english">KCDA-Korea Cake Design Association</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);">
+                                <div class="img">
+                                    <!-- 190 * 310 -->
+                                    <img src="upload/idx-teacher1.png" alt="">
+                                </div>
+                                <div class="msg">
+                                    <p class="name-english">Nina Tarasova
+                                    </p>
+                                    <p class="name-chinese">卡洛斯·李斯提
+                                    </p>
+                                    <ul class="honor-list">
+                                        <li>
+                                            <p class="chinese">韩国顶尖裱花大师
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="chinese"> 韩国裱花蛋糕设计协会会长
+                                            </p>
+                                            <p class="english">KCDA-Korea Cake Design Association</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);">
+                                <div class="img">
+                                    <!-- 190 * 310 -->
+                                    <img src="upload/idx-teacher1.png" alt="">
+                                </div>
+                                <div class="msg">
+                                    <p class="name-english">Nina Tarasova
+                                    </p>
+                                    <p class="name-chinese">卡洛斯·李斯提
+                                    </p>
+                                    <ul class="honor-list">
+                                        <li>
+                                            <p class="chinese">韩国顶尖裱花大师
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="chinese"> 韩国裱花蛋糕设计协会会长
+                                            </p>
+                                            <p class="english">KCDA-Korea Cake Design Association</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);">
+                                <div class="img">
+                                    <!-- 190 * 310 -->
+                                    <img src="upload/idx-teacher1.png" alt="">
+                                </div>
+                                <div class="msg">
+                                    <p class="name-english">Nina Tarasova
+                                    </p>
+                                    <p class="name-chinese">卡洛斯·李斯提
+                                    </p>
+                                    <ul class="honor-list">
+                                        <li>
+                                            <p class="chinese">韩国顶尖裱花大师
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="chinese"> 韩国裱花蛋糕设计协会会长
+                                            </p>
+                                            <p class="english">KCDA-Korea Cake Design Association</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);">
+                                <div class="img">
+                                    <!-- 190 * 310 -->
+                                    <img src="upload/idx-teacher1.png" alt="">
+                                </div>
+                                <div class="msg">
+                                    <p class="name-english">Nina Tarasova
+                                    </p>
+                                    <p class="name-chinese">卡洛斯·李斯提
+                                    </p>
+                                    <ul class="honor-list">
+                                        <li>
+                                            <p class="chinese">韩国顶尖裱花大师
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="chinese"> 韩国裱花蛋糕设计协会会长
+                                            </p>
+                                            <p class="english">KCDA-Korea Cake Design Association</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                         <div class="item item3">
+                            <a href="javascript:void(0);">
+                                <div class="img">
+                                    <!-- 190 * 310 -->
+                                    <img src="upload/idx-teacher1.png" alt="">
+                                </div>
+                                <div class="msg">
+                                    <p class="name-english">Nina Tarasova
+                                    </p>
+                                    <p class="name-chinese">卡洛斯·李斯提
+                                    </p>
+                                    <ul class="honor-list">
+                                        <li>
+                                            <p class="chinese">韩国顶尖裱花大师
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="chinese"> 韩国裱花蛋糕设计协会会长
+                                            </p>
+                                            <p class="english">KCDA-Korea Cake Design Association</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);">
+                                <div class="img">
+                                    <!-- 190 * 310 -->
+                                    <img src="upload/idx-teacher1.png" alt="">
+                                </div>
+                                <div class="msg">
+                                    <p class="name-english">Nina Tarasova
+                                    </p>
+                                    <p class="name-chinese">卡洛斯·李斯提
+                                    </p>
+                                    <ul class="honor-list">
+                                        <li>
+                                            <p class="chinese">韩国顶尖裱花大师
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="chinese"> 韩国裱花蛋糕设计协会会长
+                                            </p>
+                                            <p class="english">KCDA-Korea Cake Design Association</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);">
+                                <div class="img">
+                                    <!-- 190 * 310 -->
+                                    <img src="upload/idx-teacher1.png" alt="">
+                                </div>
+                                <div class="msg">
+                                    <p class="name-english">Nina Tarasova
+                                    </p>
+                                    <p class="name-chinese">卡洛斯·李斯提
+                                    </p>
+                                    <ul class="honor-list">
+                                        <li>
+                                            <p class="chinese">韩国顶尖裱花大师
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="chinese"> 韩国裱花蛋糕设计协会会长
+                                            </p>
+                                            <p class="english">KCDA-Korea Cake Design Association</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);">
+                                <div class="img">
+                                    <!-- 190 * 310 -->
+                                    <img src="upload/idx-teacher1.png" alt="">
+                                </div>
+                                <div class="msg">
+                                    <p class="name-english">Nina Tarasova
+                                    </p>
+                                    <p class="name-chinese">卡洛斯·李斯提
+                                    </p>
+                                    <ul class="honor-list">
+                                        <li>
+                                            <p class="chinese">韩国顶尖裱花大师
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="chinese"> 韩国裱花蛋糕设计协会会长
+                                            </p>
+                                            <p class="english">KCDA-Korea Cake Design Association</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);">
+                                <div class="img">
+                                    <!-- 190 * 310 -->
+                                    <img src="upload/idx-teacher1.png" alt="">
+                                </div>
+                                <div class="msg">
+                                    <p class="name-english">Nina Tarasova
+                                    </p>
+                                    <p class="name-chinese">卡洛斯·李斯提
+                                    </p>
+                                    <ul class="honor-list">
+                                        <li>
+                                            <p class="chinese">韩国顶尖裱花大师
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="chinese"> 韩国裱花蛋糕设计协会会长
+                                            </p>
+                                            <p class="english">KCDA-Korea Cake Design Association</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);">
+                                <div class="img">
+                                    <!-- 190 * 310 -->
+                                    <img src="upload/idx-teacher1.png" alt="">
+                                </div>
+                                <div class="msg">
+                                    <p class="name-english">Nina Tarasova
+                                    </p>
+                                    <p class="name-chinese">卡洛斯·李斯提
+                                    </p>
+                                    <ul class="honor-list">
+                                        <li>
+                                            <p class="chinese">韩国顶尖裱花大师
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="chinese"> 韩国裱花蛋糕设计协会会长
+                                            </p>
+                                            <p class="english">KCDA-Korea Cake Design Association</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-section-block">
+            <div class="m-idx-advantage">
+                <div class="cm-container">
+                    <div class="m-idx-common-header">
+                        <p class="title">——我们的优势——</p>
+                        <p class="tip">实战派创业全技能指导</p>
+                    </div>
+                    <ul class="advantage-list">
+                        <li>
+                            <div class="img">
+                                <!-- 100*100 -->
+                                <img src="upload/idx-adv1.png" />
+                            </div>
+                            <div class="msg">
+                                <p class="title">教学国际化 授课人性化</p>
+                                <!-- 描述这里我看见有提前换行的，填写数据里提前换行的地方加<br/> -->
+                                <p class="des">
+                                    所有教师均拥有丰富的实践经
+                                    <br/>验，法籍外教全职入驻</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="upload/idx-adv2.png" />
+                            </div>
+                            <div class="msg">
+                                <p class="title">教学国际化 授课人性化</p>
+                                <!-- 描述这里我看见有提前换行的，填写数据里提前换行的地方加<br/> -->
+                                <p class="des">
+                                    所有教师均拥有丰富的实践经
+                                    <br/>验，法籍外教全职入驻</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="upload/idx-adv3.png" />
+                            </div>
+                            <div class="msg">
+                                <p class="title">教学国际化 授课人性化</p>
+                                <!-- 描述这里我看见有提前换行的，填写数据里提前换行的地方加<br/> -->
+                                <p class="des">
+                                    所有教师均拥有丰富的实践经
+                                    <br/>验，法籍外教全职入驻</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="upload/idx-adv4.png" />
+                            </div>
+                            <div class="msg">
+                                <p class="title">教学国际化 授课人性化</p>
+                                <!-- 描述这里我看见有提前换行的，填写数据里提前换行的地方加<br/> -->
+                                <p class="des">
+                                    所有教师均拥有丰富的实践经
+                                    <br/>验，法籍外教全职入驻</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="upload/idx-adv5.png" />
+                            </div>
+                            <div class="msg">
+                                <p class="title">教学国际化 授课人性化</p>
+                                <!-- 描述这里我看见有提前换行的，填写数据里提前换行的地方加<br/> -->
+                                <p class="des">
+                                    所有教师均拥有丰富的实践经
+                                    <br/>验，法籍外教全职入驻</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="upload/idx-adv6.png" />
+                            </div>
+                            <div class="msg">
+                                <p class="title">教学国际化 授课人性化</p>
+                                <!-- 描述这里我看见有提前换行的，填写数据里提前换行的地方加<br/> -->
+                                <p class="des">
+                                    所有教师均拥有丰富的实践经
+                                    <br/>验，法籍外教全职入驻</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="m-section-block">
+            <div class="m-idx-case">
+                <div class="cm-container">
+                    <div class="m-idx-common-header">
+                        <p class="title">——创业案例——</p>
+                        <p class="tip">十个开店成功，九个甜蜜时光 <a href="javascript:;" class="btn-more">MORE</a></p>
+                    </div>
+                    <ul class="case-list">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div class="img">
+                                    <img src="upload/idx-case1.png">
+                                </div>
+                                <div class="msg">
+                                    <p class="title">十个创业成功，九个甜蜜时光</p>
+                                    <p class="des">我喜欢烘焙，也喜欢让家人朋友来品尝我的手艺，在还没有专项学习的时候.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div class="img">
+                                    <img src="upload/idx-case2.png">
+                                </div>
+                                <div class="msg">
+                                    <p class="title">十个创业成功，九个甜蜜时光</p>
+                                    <p class="des">我喜欢烘焙，也喜欢让家人朋友来品尝我的手艺，在还没有专项学习的时候.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div class="img">
+                                    <img src="upload/idx-case3.png">
+                                </div>
+                                <div class="msg">
+                                    <p class="title">十个创业成功，九个甜蜜时光</p>
+                                    <p class="des">我喜欢烘焙，也喜欢让家人朋友来品尝我的手艺，在还没有专项学习的时候.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div class="img">
+                                    <img src="upload/idx-case1.png">
+                                </div>
+                                <div class="msg">
+                                    <p class="title">十个创业成功，九个甜蜜时光</p>
+                                    <p class="des">我喜欢烘焙，也喜欢让家人朋友来品尝我的手艺，在还没有专项学习的时候.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div class="img">
+                                    <img src="upload/idx-case1.png">
+                                </div>
+                                <div class="msg">
+                                    <p class="title">十个创业成功，九个甜蜜时光</p>
+                                    <p class="des">我喜欢烘焙，也喜欢让家人朋友来品尝我的手艺，在还没有专项学习的时候.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div class="img">
+                                    <img src="upload/idx-case1.png">
+                                </div>
+                                <div class="msg">
+                                    <p class="title">十个创业成功，九个甜蜜时光</p>
+                                    <p class="des">我喜欢烘焙，也喜欢让家人朋友来品尝我的手艺，在还没有专项学习的时候.</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="m-section-block">
+            <!-- 1920*920 -->
+            <div class="m-idx-students" style="background: url('images/idx-bg3.png')no-repeat center center;background-size: cover">
+                <div class="cm-container">
+                    <div class="m-idx-common-header">
+                        <p class="title">——学员风采——</p>
+                        <p class="tip">每一个创业梦都在这里蜕变 <a href="javascript:;" class="btn-more">MORE</a></p>
+                    </div>
+                    <ul class="students-list">
+                        <li>
+                            <a href="javascript:;">
+                                <!-- 240* 240 -->
+                                <img src="upload/idx-student1.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <!-- 240* 240 -->
+                                <img src="upload/idx-student1.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <!-- 240* 240 -->
+                                <img src="upload/idx-student1.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <!-- 240* 240 -->
+                                <img src="upload/idx-student1.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <!-- 240* 240 -->
+                                <img src="upload/idx-student1.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <!-- 240* 240 -->
+                                <img src="upload/idx-student1.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <!-- 240* 240 -->
+                                <img src="upload/idx-student1.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <div class="center">
+                                <span>烘</span>
+                                <span>焙</span>
+                                <span>创</span>
+                                <span>业</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <!-- 240* 240 -->
+                                <img src="upload/idx-student2.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <!-- 240* 240 -->
+                                <img src="upload/idx-student2.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <!-- 240* 240 -->
+                                <img src="upload/idx-student2.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <!-- 240* 240 -->
+                                <img src="upload/idx-student2.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <!-- 240* 240 -->
+                                <img src="upload/idx-student2.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <!-- 240* 240 -->
+                                <img src="upload/idx-student2.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <!-- 240* 240 -->
+                                <img src="upload/idx-student2.png" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 校区地图 -->
+        <div class="m-section-block">
+            <div class="m-idx-schoolmap">
+                <div class="cm-container">
+                    <div class="m-idx-common-header">
+                        <p class="title">——校区地图——</p>
+                        <p class="tip">烘焙发展的前沿城市在哪，我们就在哪<a href="javascript:;" class="btn-more">MORE</a></p>
+
+                        <div class="schoolmap-container">
+                            <div class="left-map">
+                                <div id="idx-map" style="width:670px;height:542px"></div>
+                            </div>
+                            <div class="right-message">
+                                <div class="toggle-menu">
+                                    <p class="value"><span>未知城市</span><i></i></p>
+                                    <ul class="select-list">
+                                      
+                                    </ul>
+                                </div>
+                                <div class="img-container">
+                                    <div class="top">
+                                        <img src="upload/idx-school1.png">
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="img">
+                                            <img src="upload/idx-school2.png"/>
+                                        </div>
+                                         <div class="img">
+                                            <img src="upload/idx-school3.png">
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-idx-apply">
+                            <span class="left-banner-word">预约免费听课<br/>(价值500元)</span>
+                            <div class="apply-form">
+                                <form>
+                                    <div class="file-group">
+                                        <label for="u-name" class="label name"></label>
+                                        <input type="text" name="" placeholder="请输入您的昵称" class="file-input" id="u-name" />
+                                    </div>
+                                    <div class="file-group">
+                                        <label for="u-phone" class="label phone"></label>
+                                        <input type="text" name="" placeholder="请输入您的手机号码" class="file-input" id="u-phone" />
+                                    </div>
+                                    <a class="btn-submit" href="javascript:;">立即预约</a>
+                                </form>
+                            </div>
+            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 资讯中心 -->
+        <div class="m-section-block">
+            <div class="m-idx-message">
+                <div class="cm-container">
+                    <div class="m-idx-common-header">
+                        <p class="title">——资讯中心——</p>
+                        <p class="tip">你的创业梦我很在意 更支持<a href="javascript:;" class="btn-more">MORE</a></p>
+                    </div>
+                    <div class="message-container">
+                        <div class="left-slide">
+                            <ul class="toggle-menu">
+                                <!-- 初始化第一项加类s-active -->
+                                <li class="s-active" data-tar="item1">甜蜜时光资讯</li>
+                                <li data-tar="item2">行业新闻</li>
+                            </ul>
+                            <div class="menu-content">
+                                <!-- 第一项加行内样式dislay:block -->
+                                <div class="news-content content item1" style="display: block">
+                                    <div class="hot-item">
+                                        <a class="img" href="javascript:void(0)">
+                                            <!-- 368 * 236 -->
+                                            <img src="upload/idx-news1.png" />
+                                        </a>
+                                        <div class="msg">
+                                            <a class="title" href="javascript:void(0)">不玩虚的，双十一，我们要么送礼要么送钱</a>
+                                            <p class="des">烘焙市场快速的发展，其市场容量也在随之逐年增加。随之中国的烘焙行业也迎来了大发展的时期。哪里有短期的西点烘焙培训班？甜蜜时光蛋烘焙市场快速的发展，其市场容量也在随之逐年增加。随之中国的烘焙行业也迎来了大发展的时期。哪里有短期的西点烘焙培训班？甜蜜时光蛋烘焙市场快速的发展，其市场容量也在随之逐年增加。随之中国的烘焙行业也迎来了大发展的时期。哪里有短期的西点烘焙培训班？甜蜜时光蛋</p>
+                                            <p class="date">
+                                                <span>2018-04-26</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ul class="msg-list">
+                                        <li>
+                                            <a href="javascript:void(0)">想学短期的西点烘焙培训，到甜蜜时光这里来</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">想学短期的西点烘焙培训，到甜蜜时光这里来</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">想学短期的西点烘焙培训，到甜蜜时光这里来</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">想学短期的西点烘焙培训，到甜蜜时光这里来</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">想学短期的西点烘焙培训，到甜蜜时光这里来</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">想学短期的西点烘焙培训，到甜蜜时光这里来</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">想学短期的西点烘焙培训，到甜蜜时光这里来</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">想学短期的西点烘焙培训，到甜蜜时光这里来</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">想学短期的西点烘焙培训，到甜蜜时光这里来</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">想学短期的西点烘焙培训，到甜蜜时光这里来</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="infomation-content content item2">
+                                    <div class="hot-item">
+                                        <a class="img" href="javascript:void(0)">
+                                            <!-- 368 * 236 -->
+                                            <img src="upload/idx-news1.png" />
+                                        </a>
+                                        <div class="msg">
+                                            <a class="title" href="javascript:void(0)">不玩虚的，双十一，我们要么送礼要么送钱(这里是资讯)</a>
+                                            <p class="des">烘焙市场快速的发展，其市场容量也在随之逐年增加。随之中国的烘焙行业也迎来了大发展的时期。哪里有短期的西点烘焙培训班？甜蜜时光蛋烘焙市场快速的发展，其市场容量也在随之逐年增加。随之中国的烘焙行业也迎来了大发展的时期。哪里有短期的西点烘焙培训班？甜蜜时光蛋烘焙市场快速的发展，其市场容量也在随之逐年增加。随之中国的烘焙行业也迎来了大发展的时期。哪里有短期的西点烘焙培训班？甜蜜时光蛋</p>
+                                            <p class="date">
+                                                <span>2018-04-26</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ul class="msg-list">
+                                        <li>
+                                            <a href="javascript:void(0)">想学短期的西点烘焙培训，到甜蜜时光这里来</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">想学短期的西点烘焙培训，到甜蜜时光这里来</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">想学短期的西点烘焙培训，到甜蜜时光这里来</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">想学短期的西点烘焙培训，到甜蜜时光这里来</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">想学短期的西点烘焙培训，到甜蜜时光这里来</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">想学短期的西点烘焙培训，到甜蜜时光这里来</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">想学短期的西点烘焙培训，到甜蜜时光这里来</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">想学短期的西点烘焙培训，到甜蜜时光这里来</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">想学短期的西点烘焙培训，到甜蜜时光这里来</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">想学短期的西点烘焙培训，到甜蜜时光这里来</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-slide">
+                            <span class="tip">Q &amp;A   常见问题解答</span>
+                            <div class="ask-list">
+                                <div class="item">
+                                    <p class="question"><i>Q</i>学西点烘焙去学校好？还是跟师傅学比较好？</p>
+                                    <p class="answer"><i>A</i>现在很多人看中了西点烘焙这个行业，但也有很多学生和家长在考虑，学西点烘焙是跟着师傅学好，还是去学校学好?在此，甜蜜时光烘焙培训</p>
+                                </div>
+                                <div class="item">
+                                    <p class="question"><i>Q</i>学西点烘焙去学校好？还是跟师傅学比较好？</p>
+                                    <p class="answer"><i>A</i>现在很多人看中了西点烘焙这个行业，但也有很多学生和家长在考虑，学西点烘焙是跟着师傅学好，还是去学校学好?在此，甜蜜时光烘焙培训</p>
+                                </div>
+                                <div class="item">
+                                    <p class="question"><i>Q</i>学西点烘焙去学校好？还是跟师傅学比较好？</p>
+                                    <p class="answer"><i>A</i>现在很多人看中了西点烘焙这个行业，但也有很多学生和家长在考虑，学西点烘焙是跟着师傅学好，还是去学校学好?在此，甜蜜时光烘焙培训</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer class="cm-footer">
-    	<div class="cm-container">
-    		<div class="left-side">
-    			<div class="cm-footer-nav">
-    				<dl class="nav-item">
-    					<dt>大咖校友</dt>
-    					<dd>
-    						<a href="javascript:;">学员作品</a>
-    					</dd>
-    					<dd>
-    						<a href="javascript:;">创业案例</a>
-    					</dd>
-    					<dd>
-    						<a href="javascript:;">杰出校友</a>
-    					</dd>
-    					<dd>
-    						<a href="javascript:;">培客俱乐部</a>
-    					</dd>
-    				</dl>
-    				<dl class="nav-item">
-    					<dt>国际师资</dt>
-    					<dd>
-    						<a href="javascript:;">国际大师</a>
-    					</dd>
-    					<dd>
-    						<a href="javascript:;">教研团队</a>
-    					</dd>
-    					<dd>
-    						<a href="javascript:;">讲师团队</a>
-    					</dd>
-    					<dd>
-    						<a href="javascript:;">培客俱乐部</a>
-    					</dd>
-    				</dl>
-    				<dl class="nav-item">
-    					<dt>创业课程</dt>
-    					<dd>
-    						<a href="javascript:;">创业开店全能班</a>
-    					</dd>
-    					<dd>
-    						<a href="javascript:;">创业私房工作室</a>
-    					</dd>
-    					<dd>
-    						<a href="javascript:;">高端烘焙私房创业班</a>
-    					</dd>
-    					<dd>
-    						<a href="javascript:;">精品法式私房创业班</a>
-    					</dd>
-    					<dd>
-    						<a href="javascript:;">创意私房创业班</a>
-    					</dd>
-    				</dl>
-    				<dl class="nav-item">
-    					<dt>报名入学</dt>
-    					<dd>
-    						<a href="javascript:;">报名流程</a>
-    					</dd>
-    					<dd>
-    						<a href="javascript:;">在线报名</a>
-    					</dd>
-    					<dd>
-    						<a href="javascript:;">入学须知</a>
-    					</dd>
-    					<dd>
-    						<a href="javascript:;">优惠信息</a>
-    					</dd>
-    				</dl>
-    				<!-- 校区这块排版与其他不同 -->
-    				<dl class="nav-item">
-    					<dt>校区</dt>
-    					<dd>
-    						<a href="javascript:;">深圳</a>
-    						<a href="javascript:;">南京</a>
-    						<a href="javascript:;">广州</a>
-    						<a href="javascript:;">上海</a>
-    						<a href="javascript:;">北京</a>
-    						<a href="javascript:;">杭州</a>
-    						<a href="javascript:;">武汉</a>
-    						<a href="javascript:;">长沙</a>
-    						<a href="javascript:;">成都</a>
-    					</dd>
-    					
-    				</dl>
-    				<dl class="nav-item">
-    					<dt>关于我们</dt>
-    					<dd>
-    						<a href="javascript:;">品牌介绍</a>
-    					</dd>
-    					<dd>
-    						<a href="javascript:;">办学宗旨</a>
-    					</dd>
-    					<dd>
-    						<a href="javascript:;">资讯中心</a>
-    					</dd>
-    					<dd>
-    						<a href="javascript:;">加入我们</a>
-    					</dd>
-    					
-    				</dl>
-    			</div>
-    			<div class="cm-copyright">
-    				<a class="logo" href="index.html">
-    					<img src="images/common/footer-logo.png"/>
-    				</a>
-    				<p class="copyright">Copyright &copy; 2010 - 2018 深圳市德橙教育科技有限公司 粤ICP备17148063号 </p>
-    			</div>
-    		</div>
-    		<div class="right-side">
-    			<div class="ewm-box">
-    				<p class="title">关注我们</p>
-    				<div class="ewm">
-    					<img src="images/common/ewm.png">
-    				</div>
-    				<p class="name">甜蜜时光微信</p>
-    			</div>
-    			<div class="phone-box">
-    				<p class="title">全国统一咨询热线：</p>
-    				<p class="phone-num">400 168 9969</p>
-    			</div>
-    		</div>
-    		
-    	</div>
-    	
-    </footer>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=A4749739227af1618f7b0d1b588c0e85"></script>
+    <script type="text/javascript">
+
+    var pointData = [
+        {
+            "city":"深圳市",
+            "name":"深圳总部地址",
+            "point":{"lng":"113.963381","lat":"22.544495"},
+            "area":"深圳市南山区科技南12路24号",
+            "area_detail":"先健科技大厦5楼（康佳研发大厦隔壁",
+            "traffic":"地铁1号线高新园站D出口 300米",
+            "tel":"400-1689-969",
+            "work_time":"09: 00 - 18:00"
+        },
+        {
+            "city":"北京市",
+            "name":"北京校区地址",
+            "point":{"lng":"116.50132","lat":"39.967677"},
+            "area":"北京朝阳区酒仙桥路39号",
+            "area_detail":"久隆百货东门进2楼",
+            "traffic":"北京地铁14号线东风北桥站c2出口580米",
+            "tel":"400-1689-969",
+            "work_time":"09: 00 - 18:00"
+        },
+        {
+            "city":"上海市",
+            "name":"上海校区地址",
+            "point":{"lng":"121.431024","lat":"31.215919"},
+            "area":"上海市长宁区延安西路1358号 ",
+            "area_detail":"迎龙大厦9AB Sweet time",
+            "traffic":"地铁3号线延安西路下车（2号出口）延安西路和定西路交叉口 ",
+            "tel":"400-1689-969",
+            "work_time":"09: 00 - 18:00"
+        },
+        {
+            "city":"广州市",
+            "name":"广州校区地址",
+            "point":{"lng":"113.269784","lat":"23.090166"},
+            "area":"海珠区工业大道北132号 ",
+            "area_detail":"花城往事3号楼甜蜜时光",
+            "traffic":"地铁8号线沙园站B出口右手边直走600米（公路边玻璃门） ",
+            "tel":"400-1689-969",
+            "work_time":"09: 00 - 18:00"
+        },
+        
+        {
+            "city":"成都市",
+            "name":"成都校区地址",
+            "point":{"lng":"104.075449","lat":"30.663835"},
+            "area":"成都市宾隆街1号 ",
+            "area_detail":"仁和春天百货6楼",
+            "traffic":"地铁1号线天府广场站东1南出口388米 ",
+            "tel":"400-1689-969",
+            "work_time":"09: 00 - 18:00"
+        },
+        {
+            "city":"杭州市",
+            "name":"杭州校区地址",
+            "point":{"lng":"120.21539","lat":"30.266465"},
+            "area":"杭州市江干区新塘路与太平门直街交叉口 ",
+            "area_detail":" 新传媒产业大厦裙楼3楼（星巴克楼上，臻平酒店进）",
+            "traffic":"东站坐4号线，浦沿方向，景芳站下A出口出 ",
+            "tel":"400-1689-969",
+            "work_time":"09: 00 - 18:00"
+        },
+         {
+            "city":"武汉市",
+            "name":"武汉校区地址",
+            "point":{"lng":"114.347851","lat":"30.561157"},
+            "area":"武昌区中北路31号知音广场4楼 ",
+            "area_detail":" 知音广场4楼（地铁四号线楚河汉街c出口旁））",
+            "traffic":"地铁四号线楚河汉街c出口旁 ",
+            "tel":"400-1689-969",
+            "work_time":"09: 00 - 18:00"
+        },
+         {
+            "city":"长沙市",
+            "name":"长沙校区地址",
+            "point":{"lng":"112.97629","lat":"28.194955"},
+            "area":"天心区湘江中路二段36号 ",
+            "area_detail":" 华远国际中心中区电梯27楼2701甜蜜时光",
+            "traffic":"乘坐地铁2号线湘江中路站（1A出口出）步行600米。 ",
+            "tel":"400-1689-969",
+            "work_time":"09: 00 - 18:00"
+        },
+         {
+            "city":"南京市",
+            "name":"南京校区地址",
+            "point":{"lng":"118.795404","lat":"32.048811"},
+            "area":"南京市玄武区洪武北路16号汇金大厦  ",
+            "area_detail":" 汇金大厦裙楼501室（后门中国银行旁边）",
+            "traffic":"地铁3号线大行宫（2号口出）步行1000米  ",
+            "tel":"400-1689-969",
+            "work_time":"09: 00 - 18:00"
+        },
+    ];
+    var mapOpera = {
+        map:null,
+        c_point:{"lng":"116.331398","lat":"39.897445"},
+        allData:[],
+        curData:{},
+        myIcon:null,
+        idx:null,
+        init:function(allData){
+            var _t = this;
+            _t.allData = allData || [];
+            _t.map = new BMap.Map('idx-map',{minZoom:6,maxZoom:7});
+            var point = new BMap.Point(_t.c_point.lng,_t.c_point.lat);
+            _t.map.centerAndZoom(point,7);
+
+            _t.myIcon = new BMap.Icon("images/common/location.png",new BMap.Size(32,32));
+             _t.getPlaceIP();
+             _t.initSelList();
+            _t.initMarker();
+
+        },
+        initSelList:function(){
+            var _t = this;
+            var selList = $('.m-idx-schoolmap .right-message .toggle-menu .select-list');
+
+            var html = '';
+            for(var i = 0; i < _t.allData.length; i++ ){
+                var item = _t.allData[i];
+                html+= '<li data-idx='+i+'>'+item.name+'</li>'
+            }
+            selList.html(html);
+        },
+        //初始覆盖物
+        initMarker:function(){
+            var _t = this;
+           
+
+            for(var i = 0; i < _t.allData.length; i++) {
+                var item = _t.allData[i];
+              
+                //_t.addMarker(item.point);
+                _t.addClickHandler(item,i);
+            }
+
+
+        },
+
+        addClickHandler:function(item,idx){
+            var _t = this;
+            var content = "<div class='cm-marker' id='marker"+idx+"'>"
+            +"<h5>"+item.name+"</h5>"
+            +"<p class='address'>"+item.area + item.area_detail +"</p>"
+            +"<p class='traffic'>路线："+item.traffic+"</p>"
+            +"<p class='tel'>电话："+item.tel+"</p>"
+            +"<p class='work-time'>营业时间："+item.work_time+"</p></div>"
+
+            var point = new BMap.Point(item.point.lng,item.point.lat);
+            var marker = new BMap.Marker(point,{icon:_t.myIcon});
+            _t.map.addOverlay(marker);
+            marker.addEventListener("click",function(e){
+                _t.openInfo(content,e)
+            });
+
+        },
+
+        openInfo:function (content,e){
+            var _t = this;
+            var opts = {
+                width : 262,     // 信息窗口宽度
+                height: 182,     // 信息窗口高度
+                title : "" , // 信息窗口标题
+                enableMessage:true//设置允许信息窗发送短息
+            };
+            var p = e.target;
+            var point = new BMap.Point(p.getPosition().lng, p.getPosition().lat);
+            var infoWindow = new BMap.InfoWindow(content,opts);  // 创建信息窗口对象 
+            _t.map.openInfoWindow(infoWindow,point); //开启信息窗口
+        },
+        //添加覆盖物
+        addMarker:function(point){
+            var _t = this;
+            var point = new BMap.Point(point.lng,point.lat);
+            var marker = new BMap.Marker(point,{icon:_t.myIcon});
+            _t.map.addOverlay(marker);
+        },
+        //IP定位城市
+        getPlaceIP:function(){
+            var _t = this;
+            var idx;
+            var myCity = new BMap.LocalCity();
+            myCity.get(function(result){
+                var cityName = result.name;
+                _t.map.setCenter(cityName);
+
+                $(".u-select-area .area-show").html(cityName);
+
+                if(cityName == '北京市'){
+                   
+                    idx = 1;
+                }else if(cityName == '深圳市'){
+                    idx = 0;
+                }else if(cityName == '上海市'){
+                   idx = 2;
+                }
+                else if(cityName == '广州市'){
+                   idx = 3;
+                }
+                else if(cityName == '成都市'){
+                   idx = 4;
+                }
+                else if(cityName == '杭州市'){
+                    idx = 5;
+                }
+                else if(cityName == '武汉市'){
+                    idx = 6;
+                }
+                else if(cityName == '南京市'){
+                    idx = 7;
+                }else if(cityName == '长沙市'){
+                    idx = 8;
+                }else{
+                    idx = 1;
+                }
+                 _t.idx = idx;
+               
+
+                 _t.curData = _t.allData[idx];
+                   
+                _t.map.panTo(new BMap.Point(_t.curData.point.lng,_t.curData.point.lat));
+                
+                _t.showMarker(idx);
+                
+            });
+        },
+        showMarker:function(idx){
+            var _t = this;
+            var item = _t.allData[idx];
+            var point = new BMap.Point(item.point.lng,item.point.lat);
+
+            var opts = {
+                width : 262,     // 信息窗口宽度
+                height: 182,     // 信息窗口高度
+                title : "" , // 信息窗口标题
+                enableMessage:true//设置允许信息窗发送短息
+            };
+            var sContent = "<div class='cm-marker' id='marker"+idx+"'>"
+            +"<h5>"+item.name+"</h5>"
+            +"<p class='address'>"+item.area + item.area_detail +"</p>"
+            +"<p class='traffic'>路线："+item.traffic+"</p>"
+            +"<p class='tel'>电话："+item.tel+"</p>"
+            +"<p class='work-time'>营业时间："+item.work_time+"</p></div>";
+
+             _t.map.panTo(point);
+            var infoWindow = new BMap.InfoWindow(sContent,opts);
+            _t.map.openInfoWindow(infoWindow,point);
+            $('.m-idx-schoolmap .right-message .toggle-menu .value').html(item.name+'<i></i>');
+        },
+        //浏览器定位
+        getPlace:function(){
+
+            var _t = this;
+            var geolocation = new BMap.Geolocation();
+                geolocation.getCurrentPosition(function(r){
+                    if(this.getStatus() == BMAP_STATUS_SUCCESS){
+                        //var mk = new BMap.Marker(r.point);
+                        // _t.map.addOverlay(mk);
+                        _t.map.panTo(r.point);
+                        _t.c_point.lng = r.point.lng;
+                        _t.c_point.lat = r.point.lat;
+                        
+                        //进行逆地址解析获得城市名
+                        _t.geocoder(_t.c_point);
+
+                    }
+                    else {
+                        alert('failed'+this.getStatus());
+                    }        
+                },{enableHighAccuracy: true})
+
+        },
+        //逆地址解析
+        geocoder:function(point){
+
+            var _t = this;
+
+            var point = new BMap.Point(point.lng,point.lat);
+            var geoc = new BMap.Geocoder();
+
+            geoc.getLocation(point, function(rs){
+                var addComp = rs.addressComponents;
+                $(".u-select-area .area-show").html(addComp.city);
+
+                if(addComp.city == '北京市'){
+                    _t.curData = _t.allData[1];
+
+                }else if(addComp.city == '深圳市'){
+                    _t.curData = _t.allData[0]
+                }else if(addComp.city == '上海市'){
+                    _t.curData = _t.allData[2]
+                }
+                else if(addComp.city == '广州市'){
+                    _t.curData = _t.allData[3]
+                }
+                else if(addComp.city == '成都市'){
+                    _t.curData = _t.allData[4]
+                }
+                else if(addComp.city == '杭州市'){
+                    _t.curData = _t.allData[5]
+                }
+                else if(addComp.city == '武汉市'){
+                    _t.curData = _t.allData[6]
+                }
+                else if(addComp.city == '南京市'){
+                    _t.curData = _t.allData[7]
+                }else if(addComp.city == '长沙市'){
+                    _t.curData = _t.allData[8]
+                }else{
+                    _t.curData = _t.allData[1]
+                }
+
+                _t.map.panTo(new BMap.Point(_t.curData.point.lng,_t.curData.point.lat));
+            });
+
+        }
+        //
+    }
+    mapOpera.init(pointData);
+    /*首页独有的js*/ 
+    $(function() {
+        //轮播
+        var indexSlide = new Swiper('.swiper-banner', {
+            direction: 'horizontal',
+            autoplay: 5000, //可选选项，自动滑动
+            loop: true,
+            autoplayDisableOnInteraction: false,
+            pagination: '.swiper-pagination', // 分页器
+            paginationClickable: true,
+        })
+
+        //课程轮播 
+        //左侧栏数据，把模拟数据替换即可
+        var slideData = [
+            { "name": "创业开店全能班", "score": "5", "num": "840" },
+            { "name": "创业开店全能班", "score": "3", "num": "841" },
+            { "name": "创业开店全能班", "score": "2", "num": "842" },
+            { "name": "创业开店全能班", "score": "5", "num": "843" },
+            { "name": "创业开店全能班", "score": "5", "num": "844" },
+        ]
+        var indexSlide = new Swiper('.swiper-lesson', {
+            direction: 'horizontal',
+            //autoplay: 5000,//可选选项，自动滑动
+            loop: true,
+            autoplayDisableOnInteraction: false,
+            paginationClickable: true,
+            pagination: '.swiper-pagination', // 分页器
+            paginationBulletRender: function(swiper, index, className) {
+
+                var html =
+                    '<div class="' + className + '">' +
+                    '<p class="les-name">' + slideData[index].name + '</p>' +
+                    '<p class="score">';
+
+                for (var i = 0; i < parseInt(slideData[index].score); i++) {
+                    html += '<i></i>'
+                }
+
+                html += '</p>' +
+                    '<p class="advisory">最近咨询：' + slideData[index].num + '</p>' +
+                    '</div>';
+                return html;
+            },
+            prevButton: '.swiper-button-prev',
+            nextButton: '.swiper-button-next',
+
+        });
+
+        // 学员作品菜单切换
+        $('.works-box .menu-list').on('click', "li", function() {
+
+            var _t = $(this);
+
+            if (_t.hasClass("s-active")) {
+                return;
+            }
+
+            var tar = _t.attr('data-tar');
+            if (tar == undefined || tar == '') {
+                return;
+            }
+            _t.addClass('s-active').siblings('.s-active').removeClass('s-active')
+
+            $('.works-list .works-item-box.' + tar).fadeIn().siblings().fadeOut();
+        });
+
+        // 教师切换
+        $(".m-idx-teachers .menu-list").on('click','li',function(){
+
+            var _t = $(this);
+
+            if(_t.hasClass('s-active')){
+                return;
+            }
+
+            var tar = _t.attr('data-tar');
+
+            if(tar == undefined || tar == ""){
+                return;
+            }
+
+            _t.addClass('s-active').siblings('.s-active').removeClass('s-active');
+
+            $('.teachers-list .item.'+ tar).fadeIn().siblings().fadeOut();
+        });
+
+        //新闻和资讯切换
+        $(".m-idx-message .toggle-menu").on('click','li',function(){
+
+            var _t = $(this);
+
+            if(_t.hasClass('s-active')){
+                return;
+            }
+
+            var tar = _t.attr('data-tar');
+
+            if(tar == undefined || tar == ""){
+                return;
+            }
+
+            _t.addClass('s-active').siblings('.s-active').removeClass('s-active');
+
+            $('.m-idx-message .menu-content .content.'+ tar).fadeIn().siblings().fadeOut();
+        });
+
+        // loadJScript();
+        // 
+        //地图切换列表打开
+        $(".m-idx-schoolmap .right-message .toggle-menu .value").click(function(){
+            var _t = $(this);
+            var setlist = _t.siblings('.select-list');
+
+            if(setlist.css('display') == 'none'){
+                setlist.fadeIn();
+            }else{
+                setlist.fadeOut();
+            }
+        });
+
+        //切换城市数据
+        $('.m-idx-schoolmap .select-list').on('click','li',function(){
+
+            var idx = $(this).attr('data-idx');
+            mapOpera.showMarker(idx);
+            $(this).parent().fadeOut();
+        });
+
+    })
+    </script>
+
     <!-- 公共底部 -->
+    <div id="back-top" class="cm-back-top"></div>
+    <footer class="cm-footer">
+        <div class="cm-container">
+            <div class="left-side">
+                <div class="cm-footer-nav">
+                    <dl class="nav-item">
+                        <dt>大咖校友</dt>
+                        <dd>
+                            <a href="javascript:;">学员作品</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">创业案例</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">杰出校友</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">培客俱乐部</a>
+                        </dd>
+                    </dl>
+                    <dl class="nav-item">
+                        <dt>国际师资</dt>
+                        <dd>
+                            <a href="javascript:;">国际大师</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">教研团队</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">讲师团队</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">培客俱乐部</a>
+                        </dd>
+                    </dl>
+                    <dl class="nav-item">
+                        <dt>创业课程</dt>
+                        <dd>
+                            <a href="javascript:;">创业开店全能班</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">创业私房工作室</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">高端烘焙私房创业班</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">精品法式私房创业班</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">创意私房创业班</a>
+                        </dd>
+                    </dl>
+                    <dl class="nav-item">
+                        <dt>报名入学</dt>
+                        <dd>
+                            <a href="javascript:;">报名流程</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">在线报名</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">入学须知</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">优惠信息</a>
+                        </dd>
+                    </dl>
+                    <!-- 校区这块排版与其他不同 -->
+                    <dl class="nav-item">
+                        <dt>校区</dt>
+                        <dd>
+                            <a href="javascript:;">深圳</a>
+                            <a href="javascript:;">南京</a>
+                            <a href="javascript:;">广州</a>
+                            <a href="javascript:;">上海</a>
+                            <a href="javascript:;">北京</a>
+                            <a href="javascript:;">杭州</a>
+                            <a href="javascript:;">武汉</a>
+                            <a href="javascript:;">长沙</a>
+                            <a href="javascript:;">成都</a>
+                        </dd>
+                    </dl>
+                    <dl class="nav-item">
+                        <dt>关于我们</dt>
+                        <dd>
+                            <a href="javascript:;">品牌介绍</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">办学宗旨</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">资讯中心</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">加入我们</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="cm-copyright">
+                    <a class="logo" href="index.html">
+                        <img src="images/common/footer-logo.png"/>
+                    </a>
+                    <p class="copyright">Copyright &copy; 2010 - 2018 深圳市德橙教育科技有限公司 粤ICP备17148063号 </p>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="ewm-box">
+                    <p class="title">关注我们</p>
+                    <div class="ewm">
+                        <img src="images/common/ewm.png">
+                    </div>
+                    <p class="name">甜蜜时光微信</p>
+                </div>
+                <div class="phone-box">
+                    <p class="title">全国统一咨询热线：</p>
+                    <p class="phone-num">400 168 9969</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        //公共js
+        $(function(){
+
+            /*回到顶部功能*/
+            var wh = document.documentElement.clientHeight;
+            var canHandleScroll = true;
+
+            $(window).on('resize', function(){
+                wh = document.documentElement.clientHeight;
+            });
+
+            //回到顶部功能
+            $("#back-top").click(function(){
+                $('body,html').animate({'scrollTop':0}, 500)
+            })
+            //滚动监听
+            $(window).on('scroll',function(){
+
+                isShowBackTop();
+
+                var activeDom = $('.m-lesson-list .lesson-item.status-scroll');
+
+                for (var i = 0; i < activeDom.length; i ++){
+                    isActiveNum(activeDom[i]);
+                } 
+
+            })
+
+            function isShowBackTop() {
+                
+                if (canHandleScroll){
+
+                    canHandleScroll = false;
+
+                    var timer = setTimeout(function(){
+                        var wScrTop = $(window).scrollTop();
+
+                        if(wScrTop > wh){
+                            $("#back-top").fadeIn();
+                        }else{
+                            $('#back-top').fadeOut();
+                        }
+
+                        canHandleScroll = true;
+                        clearInterval(timer);
+
+                    },100)
+
+                }
+            }
+
+            function isActiveNum(dom){
+
+                var _t = $(dom);
+                var max = parseInt(_t.attr('data-max'));
+                var num = parseInt(Math.random()*6) + 1;
+
+                var bottom = dom.getBoundingClientRect().bottom;
+
+                if(bottom > 200){
+
+                    _t.removeClass("status-scroll");
+                    var timer = setInterval(function(){
+
+                        --max;
+
+                        _t.find('.num em').html(max < 10 ? '0' + max : max);
+
+                        if(max <= num){
+                            clearInterval(timer);
+                            timer = null;
+                            return;
+                        }
+
+                    },200);
+
+                }
+
+
+            }
+
+        })
+    </script>
 </body>
+
 </html>
