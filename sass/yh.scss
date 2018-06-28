@@ -10,7 +10,10 @@
 			position: absolute;
 			left:50%;
 			top:0;
-			transform:translateX(-50%);
+			-webkit-transform:translateX(-50%);
+			   -moz-transform:translateX(-50%);
+			    -ms-transform:translateX(-50%);
+			        transform:translateX(-50%);
 			height: 780px;
 			width: 1920px;
 		}
@@ -24,7 +27,6 @@
 		-webkit-transform: translateX(-50%);
 		   -moz-transform: translateX(-50%);
 		    -ms-transform: translateX(-50%);
-		     -o-transform: translateX(-50%);
 		        transform: translateX(-50%);
 		.form-menu{
 			width: 200px;
@@ -64,26 +66,46 @@
 					display: none;
 					padding:40px 60px 40px 100px;
 					.form-box{
+						display: -webkit-box;
+						display: -moz-box;
+						display: -ms-flexbox;
 						display: flex;
 						width: 100%;
-						align-items: flex-start;
+						-webkit-box-align: start;
+						   -moz-box-align: start;
+						    -ms-flex-align: start;
+						        align-items: flex-start;
 						.apply-msg{
 							width: 300px;
-							flex-shrink: 0;
+							-ms-flex-negative: 0;
+							    flex-shrink: 0;
 						}
 						
 						.select-lesson{
-							flex:1;
+							-webkit-box-flex:1;
+							   -moz-box-flex:1;
+							    -ms-flex:1;
+							        flex:1;
 							max-height: 520px;
 							overflow-y:auto; 
+							display: -webkit-box; 
+							display: -moz-box; 
+							display: -ms-flexbox; 
 							display: flex;
-							align-items: center;
+							-webkit-box-align: center;
+							   -moz-box-align: center;
+							    -ms-flex-align: center;
+							        align-items: center;
 							.left{
-								flex-shrink:0 ;
+								-ms-flex-negative:0 ;
+								    flex-shrink:0 ;
 							}
 							.right{
 								margin:10px 30px 0;
-								flex:1;
+								-webkit-box-flex:1;
+								   -moz-box-flex:1;
+								    -ms-flex:1;
+								        flex:1;
 								.apply-num{
 									font-size: 16px;
 									color:#333;
@@ -100,9 +122,15 @@
 							.lesson-list{
 								margin-top: 20px;
 								&>li{
+									display: -webkit-box;
+									display: -moz-box;
+									display: -ms-flexbox;
 									display: flex;
 									margin-bottom: 10px;
-									align-items: center;
+									-webkit-box-align: center;
+									   -moz-box-align: center;
+									    -ms-flex-align: center;
+									        align-items: center;
 									.lesson-name{
 										display: block;
 										width: 200px;
@@ -116,7 +144,8 @@
 										font-size: 16px;
 										color:#333;
 										border:1px solid #7F523C;
-										border-radius: 6px;
+										-moz-border-radius: 6px;
+										     border-radius: 6px;
 										cursor: pointer;
 										position: relative;
 										.label-rcd{
@@ -132,10 +161,24 @@
 											line-height: 14px;
 											padding:10px 0;
 											overflow: hidden;
+											display: -webkit-box;
+											display: -moz-box;
+											display: -ms-flexbox;
 											display: flex;
-											flex-direction: column;
-											justify-content: center;
-											align-items: center;
+											-webkit-box-orient: vertical;
+											-webkit-box-direction: normal;
+											   -moz-box-orient: vertical;
+											   -moz-box-direction: normal;
+											    -ms-flex-direction: column;
+											        flex-direction: column;
+											-webkit-box-pack: center;
+											   -moz-box-pack: center;
+											    -ms-flex-pack: center;
+											        justify-content: center;
+											-webkit-box-align: center;
+											   -moz-box-align: center;
+											    -ms-flex-align: center;
+											        align-items: center;
 
 										}
 									}
@@ -151,7 +194,8 @@
 											border:1px solid #7F523C;
 											line-height: 1;
 											padding:6px 10px;
-											border-radius: 6px;
+											-moz-border-radius: 6px;
+											     border-radius: 6px;
 											margin:0 5px;
 										}
 									}

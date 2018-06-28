@@ -247,7 +247,8 @@
 .join-btn{
 	width:304px;
 	height:54px;
-	border-radius:10px;
+	-moz-border-radius:10px;
+	     border-radius:10px;
 	margin-left: 448px;
 	line-height: 54px;
 	position: relative;
@@ -305,7 +306,8 @@
 	height: 180px;
 	width: 180px;
 	border: 2px dotted #999;
-	border-radius: 15px;margin-top: 71px;
+	-moz-border-radius: 15px;
+	     border-radius: 15px;margin-top: 71px;
 }
 .jointor p{
 	color: #fff;
@@ -342,7 +344,8 @@
 .personalr li{
 	width:264px;
 	height:50px;
-	border-radius:6px;
+	-moz-border-radius:6px;
+	     border-radius:6px;
 	width:264px;
 	font-size:20px;
 	font-family:MicrosoftYaHei;
@@ -368,7 +371,8 @@
 .personal-mov{
 	width:1200px;
 	height:340px;
-	border-radius:10px;
+	-moz-border-radius:10px;
+	     border-radius:10px;
 	overflow-x: auto;
 	overflow-y: hidden;
 	white-space: nowrap;
@@ -396,45 +400,70 @@
 	width: 4px;
 	height: 280px;
 	background:rgba(204,204,204,1);
-	border-radius:2px;
+	-moz-border-radius:2px;
+	     border-radius:2px;
 	margin: 0px 40px;
+}
+.video-box{
+	width: 300px;
+	height: 200px;
+}
+.video-box video{
+	width: 100%;
+	height: 100%;
+	-o-object-fit: fill;
+	   object-fit: fill;
 }
 .personal-mov .personal-mov-list,.personal-mov .personal-split{
 	display: inline-block;
 }
 .personal-img{
 	position: relative;
+	height: 380px;
+	overflow: hidden;
+	margin-bottom: 100px;
 }
-.personal-img li{
+.offset-box{
+	width: 400%;
+	height: 380px;
+}
+.offid{
+	float: left;
+	height: 380px;
+}
+.offid li{
 	width: 290px;
 	height: 380px;
 	float: left;
 	margin-right: 10px;
-	margin-bottom: 100px;
+	/*display: inline-block;*/
 }
 
 .personal-img li img{
 	width: 290px;
 	height: 380px;
-	border: 1px dotted #999;
+	padding: 0px;
+	border: 1px solid #eee;
 }
 .personal-pre{
 	position: absolute;
 	left: -7px;
 	top: 165px;
 	width: 50px;
+	z-index: 66;
 }
 .personal-next{
 	position: absolute;
 	right: 3px;
 	top: 165px;
 	height: 50px;
+	display: none;
 }
 
   /*滚动条样式*/
         .personal-mov::-webkit-scrollbar {/*滚动条整体样式*/
           /*	width: 4px;*/     /*高宽分别对应横竖滚动条的尺寸*/
-            height: 4px;
+            height: 10px;
         }
         .personal-mov::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
             border-radius: 5px;

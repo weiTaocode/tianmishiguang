@@ -112,9 +112,9 @@ $(function(){
 
 
 	//获取城市模块到顶部的距离   
-    $('#about_tenet_a').click(function () {  
-        $('html,body').animate({scrollTop:1030},500);  
-    });  
+    // $('#about_tenet_a').click(function () {  
+    //     $('html,body').animate({scrollTop:1030},500);  
+    // });  
 
     //获取城市模块到顶部的距离   
     $('#about_tenet_a').click(function () {  
@@ -142,17 +142,12 @@ $(function(){
 
 
 
-    var alll=0;
-     $('.about-partnet-list').mouseenter(function () {
-     		alll=alll + 100;
-            $(this).animate({marginLeft:"-800px"},1000, function () {
-                    $(".about-partnet-list ul>li").eq(0).appendTo($(this));
-            });
-        });
- //            $('.left').click(function () {
- //                $("#banner ul").css('marginLeft','-800px');
- //                $("#banner ul>li").eq(3).prependTo($("#banner ul"));
- //                $("#banner ul").animate({marginLeft:"0px"},600);
- //            }
-	// });
-});
+//     var alll=0;
+//      $('.about-partnet-list').mouseenter(function () {
+//      		alll=alll + 100;
+//             $(this).animate({marginLeft:"-800px"},1000, function () {
+//                     $(".about-partnet-list ul>li").eq(0).appendTo($(this));
+//             });
+//         });
+ 
+ });

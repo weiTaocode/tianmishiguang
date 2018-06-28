@@ -13,39 +13,75 @@
     position: absolute;
     right: 0;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     line-height: 30px;
     color: #fff;
     font-size: 16px;
     background: #7F523C;
+    -moz-border-radius: 999px;
     border-radius: 999px;
     padding: 0 28px;
+    -webkit-transition: background .3s ease;
+    -moz-transition: background .3s ease;
     transition: background .3s ease;
     font-weight: normal; }
     .m-idx-common-header .tip .btn-more:hover {
       background: rgba(127, 82, 59, 0.8); }
 
 .m-idx-apply {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-shadow: 0 -1px 8px 2px #ddd;
+  -moz-box-shadow: 0 -1px 8px 2px #ddd;
   box-shadow: 0 -1px 8px 2px #ddd; }
   .m-idx-apply .left-banner-word {
     width: 300px;
     height: 100px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     color: #fff;
     background: #666;
     font-size: 20px;
     line-height: 30px;
+    -ms-flex-negative: 0;
     flex-shrink: 0; }
   .m-idx-apply .apply-form {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
     flex: 1; }
     .m-idx-apply .apply-form form {
       padding: 0 80px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: justify;
+      -moz-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
       align-items: center; }
       .m-idx-apply .apply-form form .file-group {
         display: -webkit-box;
@@ -110,13 +146,20 @@
   padding: 60px 0; }
   .m-idx-schoolmap .schoolmap-container {
     margin-top: 40px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     background: #fafafa; }
     .m-idx-schoolmap .schoolmap-container .left-map {
       width: 670px;
       height: 542px;
+      -ms-flex-negative: 0;
       flex-shrink: 0; }
     .m-idx-schoolmap .schoolmap-container .right-message {
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      -ms-flex: 1;
       flex: 1;
       padding: 20px 40px; }
       .m-idx-schoolmap .schoolmap-container .right-message .area-msg {
@@ -143,7 +186,11 @@
           margin-top: 20px; }
       .m-idx-schoolmap .schoolmap-container .right-message .school-toggle-list {
         margin-top: 40px;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
         .m-idx-schoolmap .schoolmap-container .right-message .school-toggle-list li {
           width: 124px;
@@ -173,7 +220,11 @@
     color: #333; }
   .m-school-environment .img-list {
     margin-top: 30px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .m-school-environment .img-list li {
       width: 370px;
@@ -184,12 +235,20 @@
       .m-school-environment .img-list li:nth-child(3n+0) {
         margin-right: 0; }
       .m-school-environment .img-list li:hover img {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
         transform: scale(1.1); }
       .m-school-environment .img-list li img {
         display: block;
         width: 100%;
         height: 100%;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
         transition: all .5s ease;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
         transform: scale(1); }
 
 /*# sourceMappingURL=school.css.map */

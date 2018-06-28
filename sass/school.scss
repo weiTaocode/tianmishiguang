@@ -15,13 +15,19 @@
 		 		position: absolute;
 		 		right: 0;
 		 		top:50%;
-		 		transform: translateY(-50%);
+		 		-webkit-transform: translateY(-50%);
+		 		   -moz-transform: translateY(-50%);
+		 		    -ms-transform: translateY(-50%);
+		 		        transform: translateY(-50%);
 		 		line-height: 30px;
 		 		color:#fff;
 		 		font-size: 16px;
 		 		background: #7F523C;
-		 		border-radius: 999px;
+		 		-moz-border-radius: 999px;
+		 		     border-radius: 999px;
 		 		padding:0 28px;
+		 		-webkit-transition: background .3s ease;
+		 		-moz-transition: background .3s ease;
 		 		transition: background .3s ease;
 		 		font-weight: normal;
 		 		&:hover{
@@ -31,28 +37,58 @@
 		 }
 }
 .m-idx-apply{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	box-shadow: 0 -1px 8px 2px #ddd;
+	-webkit-box-align: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-shadow: 0 -1px 8px 2px #ddd;
+	   -moz-box-shadow: 0 -1px 8px 2px #ddd;
+	        box-shadow: 0 -1px 8px 2px #ddd;
 	.left-banner-word{
 		width:300px;
 		height: 100px;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
 		display: flex;
-		align-items: center;
-		justify-content: center;
+		-webkit-box-align: center;
+		   -moz-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		   -moz-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 		color:#fff;
 		background: #666;
 		font-size: 20px;
 		line-height: 30px;
-		flex-shrink: 0;
+		-ms-flex-negative: 0;
+		    flex-shrink: 0;
 	}
 	.apply-form{
-		flex:1;
+		-webkit-box-flex:1;
+		   -moz-box-flex:1;
+		    -ms-flex:1;
+		        flex:1;
 		form{
 			padding:0 80px;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
 			display: flex;
-			justify-content: space-between;
-			align-items: center;
+			-webkit-box-pack: justify;
+			   -moz-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
+			-webkit-box-align: center;
+			   -moz-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
 			.file-group{
 				display: -webkit-box;
 				display: -moz-box;
@@ -129,15 +165,22 @@
 	padding:60px 0;
 	.schoolmap-container{
 		margin-top: 40px;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
 		display: flex;
 		background: #fafafa;
 		.left-map{
 			width: 670px;
 			height: 542px;
-			flex-shrink: 0;
+			-ms-flex-negative: 0;
+			    flex-shrink: 0;
 		}
 		.right-message{
-			flex:1;
+			-webkit-box-flex:1;
+			   -moz-box-flex:1;
+			    -ms-flex:1;
+			        flex:1;
 			padding:20px 40px;
 			.area-msg{
 				width: 100%;
@@ -170,8 +213,12 @@
 			}
 			.school-toggle-list{
 				margin-top: 40px;
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
 				display: flex;
-				flex-wrap:wrap;
+				-ms-flex-wrap:wrap;
+				    flex-wrap:wrap;
 				li{
 					width:124px;
 					line-height: 40px;
@@ -208,8 +255,12 @@
 	}
 	.img-list{
 		margin-top: 30px;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-wrap:wrap;
+		-ms-flex-wrap:wrap;
+		    flex-wrap:wrap;
 		li{
 			width:370px;
 			height: 250px;
@@ -220,14 +271,22 @@
 				margin-right: 0;
 			}
 			&:hover img{
-				transform: scale(1.1);
+				-webkit-transform: scale(1.1);
+				   -moz-transform: scale(1.1);
+				    -ms-transform: scale(1.1);
+				        transform: scale(1.1);
 			}
 			img{
 				display: block;
 				width: 100%;
 				height: 100%;
+				-webkit-transition: all .5s ease;
+				-moz-transition: all .5s ease;
 				transition: all .5s ease;
-				transform: scale(1.0);
+				-webkit-transform: scale(1.0);
+				   -moz-transform: scale(1.0);
+				    -ms-transform: scale(1.0);
+				        transform: scale(1.0);
 			}
 		}
 	}

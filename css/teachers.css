@@ -1,7 +1,14 @@
 .m-iteacher-list .iteacher-list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex; }
   .m-iteacher-list .iteacher-list > li {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
     background: #fafafa; }
     .m-iteacher-list .iteacher-list > li a {
@@ -20,8 +27,17 @@
 
 .m-teachers-nav-list {
   padding: 30px 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center; }
   .m-teachers-nav-list .nav-item {
     font-size: 30px;
@@ -41,10 +57,14 @@
 
 .m-nteacher-list .nteacher-item {
   margin-bottom: 80px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex; }
   .m-nteacher-list .nteacher-item .left-nteacher {
     position: relative;
     overflow: hidden;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
     display: block; }
     .m-nteacher-list .nteacher-item .left-nteacher .img {
@@ -63,10 +83,26 @@
       height: 100%;
       background: #CCC;
       padding: 20px;
+      -webkit-transform: translateY(100%);
+      -moz-transform: translateY(100%);
+      -ms-transform: translateY(100%);
       transform: translateY(100%);
+      -webkit-transition: all .8s ease-in;
+      -moz-transition: all .8s ease-in;
       transition: all .8s ease-in;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -moz-box-orient: vertical;
+      -moz-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-pack: start;
+      -moz-box-pack: start;
+      -ms-flex-pack: start;
       justify-content: flex-start; }
       .m-nteacher-list .nteacher-item .left-nteacher .msg .name {
         font-size: 20px;
@@ -76,6 +112,8 @@
           display: block;
           line-height: 30px;
           text-align: center;
+          -webkit-transition: all .8s ease-in;
+          -moz-transition: all .8s ease-in;
           transition: all .8s ease-in; }
       .m-nteacher-list .nteacher-item .left-nteacher .msg .honor-list {
         width: 100%;
@@ -89,19 +127,32 @@
           .m-nteacher-list .nteacher-item .left-nteacher .msg .honor-list li:last-child {
             margin-bottom: 0; }
     .m-nteacher-list .nteacher-item .left-nteacher:hover .msg {
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
       transform: translateY(0);
       bottom: 0;
       background: rgba(255, 255, 255, 0.8);
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center; }
       .m-nteacher-list .nteacher-item .left-nteacher:hover .msg .english, .m-nteacher-list .nteacher-item .left-nteacher:hover .msg .chinese {
         color: #7F523C; }
       .m-nteacher-list .nteacher-item .left-nteacher:hover .msg .honor-list li {
         color: #333; }
   .m-nteacher-list .nteacher-item .works-list {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     margin-left: 20px;
     margin-top: 50px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .m-nteacher-list .nteacher-item .works-list li {
       width: 380px;
@@ -116,14 +167,52 @@
       .m-nteacher-list .nteacher-item .works-list li a {
         display: block;
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        position: relative; }
         .m-nteacher-list .nteacher-item .works-list li a img {
           display: block;
           width: 100%;
           height: 100%;
+          -webkit-transition: all .5s linear;
+          -moz-transition: all .5s linear;
           transition: all .5s linear;
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -ms-transform: scale(1);
           transform: scale(1); }
+        .m-nteacher-list .nteacher-item .works-list li a .msg {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.8);
+          opacity: 0.0;
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -moz-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -moz-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-transition: opacity .5s linear;
+          -moz-transition: opacity .5s linear;
+          transition: opacity .5s linear; }
+          .m-nteacher-list .nteacher-item .works-list li a .msg .work-name {
+            font-size: 20px;
+            color: #fff;
+            line-height: 30px; }
       .m-nteacher-list .nteacher-item .works-list li:hover img {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
         transform: scale(1.1); }
+      .m-nteacher-list .nteacher-item .works-list li:hover .msg {
+        opacity: 1.0; }
 
 /*# sourceMappingURL=teachers.css.map */

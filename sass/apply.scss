@@ -153,7 +153,10 @@
 			position: absolute;
 			top:0;
 			left:50%;
-			transform:translateX(-50%);
+			-webkit-transform:translateX(-50%);
+			   -moz-transform:translateX(-50%);
+			    -ms-transform:translateX(-50%);
+			        transform:translateX(-50%);
 		}
 	}
 	.banner-content{
@@ -164,10 +167,24 @@
 		width: 100%;
 		z-index: 10;
 		padding-top: 70px;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		   -moz-box-orient: vertical;
+		   -moz-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		   -moz-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		   -moz-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 
 		.tm1{
 			font-size: 32px;
@@ -193,8 +210,14 @@
 		}
 		.tm-list{
 			margin-top: 40px;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
 			display: flex;
-			justify-content: center;
+			-webkit-box-pack: center;
+			   -moz-box-pack: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
 			li{
 				margin-right: 55px;
 				&:last-child{
