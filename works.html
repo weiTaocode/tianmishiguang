@@ -403,5 +403,53 @@
 
         })
     </script>
+ <script type="text/javascript">
+        function loadMap() {
+            if(new BMap.LocalCity()){
+
+                init();
+                   
+            }else{
+                 var script = document.createElement("script");
+                    script.type = "text/javascript";
+                    script.src = "http://api.map.baidu.com/api?v=2.0&ak=A4749739227af1618f7b0d1b588c0e85&callback=init";
+                    document.body.appendChild(script);
+            }
+        }
+        function init() {
+            
+            var myCity = new BMap.LocalCity();
+            myCity.get(function(result){
+                var cityName = result.name;
+                var cityData  = {"city":cityName,"time":new Date().getTime()};
+                
+                localStorage.setItem('tmsglogin',JSON.stringify(cityData));
+                
+            });
+
+
+         }  
+          function getLogin(){
+            var cityData = localStorage.getItem('tmsglogin');
+            if(cityData != '' && cityData != null ){
+                 
+                 var data = JSON.parse(cityData);
+                 var nTime = new Date().getTime();
+
+                 if(nTime - data.time > 86400000){
+                    localStorage.setItem('tmsglogin',"");
+                    loadMap();
+                 }else{
+                    $(".u-select-area .area-show").html(data.city);
+                 }
+
+            }else{
+                    loadMap();
+                 
+            }
+          }
+         getLogin();
+
+    </script>
 </body>
 </html>
