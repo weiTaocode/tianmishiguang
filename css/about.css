@@ -341,7 +341,7 @@ body{
 	height: 66px;
 	margin-top: 58px;
 	margin-left: 404px;
-	border: 1px dotted rgba(127,82,60,1);
+	/*border: 1px dotted rgba(127,82,60,1);*/
 }
 .about-user-info{
 	height: 60px;

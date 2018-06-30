@@ -145,7 +145,8 @@
 			margin-right: 0;
 		}
 		.lesson-title{
-			font-size: 30px;
+			// font-size: 30px;
+			font-size:25px;
 			line-height: 30px;
 			height: 60px;
 			overflow: hidden;
@@ -413,11 +414,12 @@
 				color:#fff;
 				text-align: center;
 				line-height: 170px;
-				
 				background: #7F523C;
 				-moz-border-radius: 50%;
 				     border-radius: 50%;
 				margin:40px auto 0;
+				transition:all .5s linear;
+				transform:rotate(0deg);
 			
 				b{
 					font-weight: normal;
@@ -462,9 +464,10 @@
 				}
 			}
 			&:hover .data{
-				-webkit-animation: jump 1s ;
-				   -moz-animation: jump 1s ;
-				        animation: jump 1s ;
+				// -webkit-animation: jump 1s ;
+				//    -moz-animation: jump 1s ;
+				//         animation: jump 1s ;
+				transform:rotate(180deg);
 			}
 		}
 		
@@ -612,18 +615,18 @@
 					-ms-flex-negative: 0;
 					    flex-shrink: 0;
 					.top{
-						display: -webkit-box;
-						display: -moz-box;
-						display: -ms-flexbox;
-						display: flex;
+						// display: -webkit-box;
+						// display: -moz-box;
+						// display: -ms-flexbox;
+						// display: flex;
 						width: 100%;
 						height: 430px;
 						overflow:hidden;
-						background: #fafafa;
+						background: #fff;
 						.link{
 							overflow: hidden;
 							display: block;
-							width: 305px;
+							width: 594px;
 							height: 430px;
 							-ms-flex-negative: 0;
 							    flex-shrink: 0;
@@ -633,39 +636,39 @@
 								height: 100%;
 							}
 						}
-						.detail{
-							padding:150px 20px 50px 50px;
-							-webkit-box-flex:1;
-							   -moz-box-flex:1;
-							    -ms-flex:1;
-							        flex:1;
+						// .detail{
+						// 	padding:150px 20px 50px 50px;
+						// 	-webkit-box-flex:1;
+						// 	   -moz-box-flex:1;
+						// 	    -ms-flex:1;
+						// 	        flex:1;
 							
-							.label{
-								font-size: 20px;
-								color:#F08977;
-							}
-							.title{
-								font-size: 30px;
-								color:#333;
-							}
-							.btn{
-								display: inline-block;
-								line-height: 20px;
-								font-size: 20px;
-								color:#fff;
-								padding:10px 20px;
-								-moz-border-radius: 10px;
-								     border-radius: 10px;
-								background: #F08977;
-								margin-top: 80px;
-								-webkit-transition:all .3s linear;
-								-moz-transition:all .3s linear;
-								transition:all .3s linear;
-								&:hover{
-									background:rgba(240,153,119,.8);
-								}
-							}
-						}
+						// 	.label{
+						// 		font-size: 20px;
+						// 		color:#F08977;
+						// 	}
+						// 	.title{
+						// 		font-size: 30px;
+						// 		color:#333;
+						// 	}
+						// 	.btn{
+						// 		display: inline-block;
+						// 		line-height: 20px;
+						// 		font-size: 20px;
+						// 		color:#fff;
+						// 		padding:10px 20px;
+						// 		-moz-border-radius: 10px;
+						// 		     border-radius: 10px;
+						// 		background: #F08977;
+						// 		margin-top: 80px;
+						// 		-webkit-transition:all .3s linear;
+						// 		-moz-transition:all .3s linear;
+						// 		transition:all .3s linear;
+						// 		&:hover{
+						// 			background:rgba(240,153,119,.8);
+						// 		}
+						// 	}
+						// }
 					}
 					.bottom{
 						margin-top: 10px;
@@ -849,6 +852,8 @@
 					transition:all .5s ease;
 					background: #f0f0f0;
 					z-index: 10;
+					max-height: 100%;
+					overflow-y:auto;
 					.name-english{
 						font-size: 16px;
 						line-height: 22px;
@@ -1280,6 +1285,19 @@
 				white-space: nowrap;
 
 			}
+			 .ask-list::-webkit-scrollbar {
+		            width:4px;
+		       }
+		        .ask-list::-webkit-scrollbar-thumb {
+		            border-radius: 5px;
+		            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+		            background: rgba(0,0,0,0.2);
+		        }
+		        .ask-list::-webkit-scrollbar-track {
+		            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+		            border-radius: 0;
+		            background: rgba(0,0,0,0.1);
+		        }
 			.ask-list{
 				height:412px;
 				overflow-y: auto;
@@ -1293,6 +1311,7 @@
 						font-size: 12px;
 						line-height: 20px;
 						color:#333;
+						display:block;
 						i{
 							position: absolute;
 							left:0;
@@ -1485,6 +1504,35 @@
 		span{
 
 			margin-right: 5px;
+		}
+	}
+}
+
+.m-idx-honor{
+	padding:60px 0;
+	.honor-list{
+		margin-top: 60px;
+		display:flex;
+		justify-content: space-between;
+		li{
+			.img{
+				width: 384px;
+				height: 264px;
+				overflow: hidden;
+				display: block;
+				img{
+					display:block;
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.name{
+				margin-top: 20px;
+				padding: 0 10px;
+				text-align: center;
+				font-size: 20px;
+				color:#333;
+			}
 		}
 	}
 }

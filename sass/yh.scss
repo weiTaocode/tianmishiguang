@@ -28,6 +28,15 @@
 		   -moz-transform: translateX(-50%);
 		    -ms-transform: translateX(-50%);
 		        transform: translateX(-50%);
+		.form-right{
+			position:absolute;
+			right:1px;
+			top:0;
+			width: 360px;
+			height: 100%;
+			background: #fff;
+			padding:40px 60px 40px 0;
+		}
 		.form-menu{
 			width: 200px;
 			.menu-item{
@@ -57,14 +66,14 @@
 				}
 				.form-lesson{
 					position: absolute;
-					right: -999px;
+					right: -639px;
 					top:0;
-					width:1000px;
+					width:640px;
 					height: 600px;
 					background: #fff;
 					z-index: 5;
 					display: none;
-					padding:40px 60px 40px 100px;
+					padding:40px 20px 40px 100px;
 					.form-box{
 						display: -webkit-box;
 						display: -moz-box;

@@ -38,7 +38,7 @@
 	margin-bottom: 60px;
 }
 .teach-list .teach-list-img{
-	border: 1px dotted #ccc;
+	/*border: 1px dotted #ccc;*/
 	width: 210px;
 	height: 360px;
 	float: left;
@@ -161,13 +161,22 @@
 }
 .tteam-asidel-list li{
 	margin-bottom: 60px;
+	/*height: 340px;*/
+}
+.tteam-asidel-list .img{
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	border-radius: 50%;
+	overflow:hidden;
+	/*float:left;*/
 }
 .tteam-asidel-list img{
 	width: 200px;
-	height: 300px;
+	height: auto;
+	display: block;
 }
 .tteam-list-text{
-	margin-top: 19px;
 	padding-right: 78px;
 }
 .tteam-list-name{
