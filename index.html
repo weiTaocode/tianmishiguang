@@ -15,9 +15,41 @@
 </head>
 
 <body>
+
     <!-- 公共头部 -->
   <header class="cm-header">
-        <div class="cm-container">
+        <div class="header-top">
+            <div class="cm-container">
+            <dl class="city-list">
+                  <dt>全国连锁机构：</dt>
+                  <dd>北京</dd>
+                  <dd>上海</dd>
+                  <dd>广州</dd>
+                  <dd>深圳</dd>
+                  <dd>南京</dd>
+                  <dd>武汉</dd>
+                  <dd>长沙</dd>
+                  <dd>成都</dd>
+             </dl>
+              <div class="tel">
+                  <dl>
+                      <dt>免费热线：</dt>
+                      <dd>400-1689-969</dd>
+                  </dl>
+                  <span>/</span>
+                   <dl>
+                      <dt>总部：</dt>
+                      <dd>0755-33062969</dd>
+                  </dl>
+              </div>
+              <dl class="qq">
+                  <dt>QQ：</dt>
+                  <dd>800815050</dd>
+              </dl>
+
+        </div>
+        </div>
+        <div class="cm-container header-body">
             <a class="logo" href="index.html">
                 <img src="images/common/header-logo.png"/>
             </a>
@@ -68,7 +100,6 @@
 
             <div class="phone-num">
                 <p>400-1689-969</p>
-                <p>0755-33062969</p>
             </div>
         </div>
   </header>
@@ -223,25 +254,25 @@
                     <div class="achievement-list">
                         <div class="achievement-item">
                             <span class="circle"></span>
-                            <span class="data"><b>6</b>年</span>
+                            <span class="data" style="background: url('upload/idx-student1.png')no-repeat center center;background-size: 100%"><b>6年</b></span>
                             <p class="b-word">专注烘焙创业教育</p>
                             <p class="s-word">烘焙创业模式行业首创</p>
                         </div>
                         <div class="achievement-item">
                             <span class="circle"></span>
-                            <span class="data"><b>18</b>家</span>
+                            <span class="data" style="background: url('upload/idx-student1.png')no-repeat center center;background-size: 100%"><b>18家</b></span>
                             <p class="b-word">全国连锁分校</p>
                             <p class="s-word">校区数量位居行业之首</p>
                         </div>
                         <div class="achievement-item">
                             <span class="circle"></span>
-                            <span class="data"><b>48,000</b>+</span>
+                            <span class="data" style="background: url('upload/idx-student1.png')no-repeat center center;background-size: 100%"><b>48,000+</b></span>
                             <p class="b-word">累计毕业学员</p>
                             <p class="s-word">毕业即成为烘焙行业精英</p>
                         </div>
                         <div class="achievement-item">
                             <span class="circle"></span>
-                            <span class="data"><b>30,000</b>+</span>
+                            <span class="data" style="background: url('upload/idx-student1.png')no-repeat center center;background-size: 100%"s><b>30,000+</b></span>
                             <p class="b-word">创业成功学员</p>
                             <p class="s-word">全国学员超过80%成功创业</p>
                         </div>
@@ -1402,7 +1433,7 @@
                                             <!-- 需要判断资源为图片加图片，为视频加视频 -->
                                             <!-- 368 * 236 -->
                                            <!--  <img src="upload/idx-news1.png" /> -->
-                                             <video  controls>
+                                             <video  controls width="100%" height="100%">
                                                   <source src="http://www.runoob.com/try/demo_source/movie.mp4" type="video/mp4">
                                                   <source src="http://www.runoob.com/try/demo_source/movie.mp4" type="video/ogg">
                                                 您的浏览器不支持Video标签。
@@ -1920,44 +1951,16 @@
                 var cityName = result.name;
                 _t.map.setCenter(cityName);
 
-                $(".u-select-area .area-show").html(cityName);
-
-                if(cityName == '北京市'){
-                   
-                    idx = 1;
-                }else if(cityName == '深圳市'){
-                    idx = 0;
-                }else if(cityName == '上海市'){
-                   idx = 2;
-                }
-                else if(cityName == '广州市'){
-                   idx = 3;
-                }
-                else if(cityName == '成都市'){
-                   idx = 4;
-                }
-                else if(cityName == '杭州市'){
-                    idx = 5;
-                }
-                else if(cityName == '武汉市'){
-                    idx = 6;
-                }
-                else if(cityName == '南京市'){
-                    idx = 7;
-                }else if(cityName == '长沙市'){
-                    idx = 8;
-                }else{
-                    idx = 1;
-                }
-                 _t.idx = idx;
+                // $(".u-select-area .area-show").html(cityName);
+                 _t.idx = _t.tempCity(cityName) 
                
 
-                 _t.curData = _t.allData[idx];
+                 _t.curData = _t.allData[_t.idx];
                    
                 _t.map.panTo(new BMap.Point(_t.curData.point.lng,_t.curData.point.lat));
                 
-                _t.showMarker(idx);
-                _t.showImg(idx);
+                _t.showMarker(_t.idx);
+                _t.showImg(_t.idx);
                 
             });
         },
@@ -2004,75 +2007,29 @@
             $('.m-idx-schoolmap .img-container').html(html);
               
         },
-        //浏览器定位
-        getPlace:function(){
-
-            var _t = this;
-            var geolocation = new BMap.Geolocation();
-                geolocation.getCurrentPosition(function(r){
-                    if(this.getStatus() == BMAP_STATUS_SUCCESS){
-                        //var mk = new BMap.Marker(r.point);
-                        // _t.map.addOverlay(mk);
-                        _t.map.panTo(r.point);
-                        _t.c_point.lng = r.point.lng;
-                        _t.c_point.lat = r.point.lat;
-                        
-                        //进行逆地址解析获得城市名
-                        _t.geocoder(_t.c_point);
-
-                    }
-                    else {
-                        alert('failed'+this.getStatus());
-                    }        
-                },{enableHighAccuracy: true})
-
-        },
-        //逆地址解析
-        geocoder:function(point){
-
-            var _t = this;
-
-            var point = new BMap.Point(point.lng,point.lat);
-            var geoc = new BMap.Geocoder();
-
-            geoc.getLocation(point, function(rs){
-                var addComp = rs.addressComponents;
-                $(".u-select-area .area-show").html(addComp.city);
-
-                if(addComp.city == '北京市'){
-                    _t.curData = _t.allData[1];
-
-                }else if(addComp.city == '深圳市'){
-                    _t.curData = _t.allData[0]
-                }else if(addComp.city == '上海市'){
-                    _t.curData = _t.allData[2]
-                }
-                else if(addComp.city == '广州市'){
-                    _t.curData = _t.allData[3]
-                }
-                else if(addComp.city == '成都市'){
-                    _t.curData = _t.allData[4]
-                }
-                else if(addComp.city == '杭州市'){
-                    _t.curData = _t.allData[5]
-                }
-                else if(addComp.city == '武汉市'){
-                    _t.curData = _t.allData[6]
-                }
-                else if(addComp.city == '南京市'){
-                    _t.curData = _t.allData[7]
-                }else if(addComp.city == '长沙市'){
-                    _t.curData = _t.allData[8]
-                }else{
-                    _t.curData = _t.allData[1]
-                }
-
-                _t.map.panTo(new BMap.Point(_t.curData.point.lng,_t.curData.point.lat));
-            });
-
-        }
+       
+       
         //
-    }
+            tempCity:function(city){
+                var _t = this;
+                var def;
+                for(var i = 0; i < _t.allData.length; i++){
+
+                    var item =  _t.allData[i];
+                    if(item.city == city){
+                        return  i
+                    }
+
+                    if(item.city == '深圳市'){
+                        def = i 
+                    }
+                }
+
+                return def;
+
+            }
+    };
+    
     mapOpera.init(pointData);
         // 
         //地图切换列表打开

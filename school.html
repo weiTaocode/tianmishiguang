@@ -359,42 +359,15 @@
 
                 // $(".u-select-area .area-show").html(cityName);
 
-                if(cityName == '北京市'){
-                   
-                    idx = 1;
-                }else if(cityName == '深圳市'){
-                    idx = 0;
-                }else if(cityName == '上海市'){
-                   idx = 2;
-                }
-                else if(cityName == '广州市'){
-                   idx = 3;
-                }
-                else if(cityName == '成都市'){
-                   idx = 4;
-                }
-                else if(cityName == '杭州市'){
-                    idx = 5;
-                }
-                else if(cityName == '武汉市'){
-                    idx = 6;
-                }
-                else if(cityName == '南京市'){
-                    idx = 7;
-                }else if(cityName == '长沙市'){
-                    idx = 8;
-                }else{
-                    idx = 1;
-                }
-                 _t.idx = idx;
+                 _t.idx = _t.tempCity(cityName) 
                
 
-                 _t.curData = _t.allData[idx];
+                 _t.curData = _t.allData[_t.idx];
                    
                 _t.map.panTo(new BMap.Point(_t.curData.point.lng,_t.curData.point.lat));
                 
-                _t.showMarker(idx);
-                _t.showImg(idx);
+                _t.showMarker(_t.idx);
+                _t.showImg(_t.idx);
             });
         },
         showMarker:function(idx){
@@ -421,6 +394,24 @@
             }
             $('.m-school-environment .img-list').html(html);
               
+        },
+         tempCity:function(city){
+            var _t = this;
+            var def;
+            for(var i = 0; i < _t.allData.length; i++){
+
+                var item =  _t.allData[i];
+                if(item.city == city){
+                    return  i
+                }
+
+                if(item.city == '深圳市'){
+                    def = i 
+                }
+            }
+
+            return def;
+
         }
     }
     mapOpera.init(pointData);
