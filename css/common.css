@@ -14,7 +14,7 @@ html {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-size-adjust: 100%; }
-
+html{width: 100%;height: 100%}
 body {
   font: "Microsoft YaHei", '榛戜綋',\9ED1\4F53, 'Helvetica Neue', SimSun, "Arial Narrow", Arial, Helvetica, sans-serif;
   font-family: "Microsoft YaHei", 'Helvetica Neue', SimSun, "Arial Narrow", Arial, Helvetica, sans-serif; }
@@ -2104,3 +2104,10 @@ img.lazy {
   background: url("../images/common/load.gif") no-repeat center center; }
 
 /*# sourceMappingURL=common.css.map */
+.bodyfixed{
+  position: fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  right: 0;
+}

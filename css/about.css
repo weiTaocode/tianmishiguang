@@ -527,7 +527,7 @@ body{
 
 /************************资讯中心**********************/
 .infos-indexl{
-	width: 660px;
+	width: 760px;
 }
 .infos-indexr{
 	width:400px;
@@ -543,22 +543,29 @@ body{
 	float: left;
 }
 .infos-index-course-list{
-	margin-left: 19px;
 	padding-top: 9px;
+	margin-left: 420px;
+}
+.infos-index-course-list li{
+	margin-bottom: 5px;
 }
 .infos-index-course-list li h2{
 	height:30px;
 	font-size:30px;
 	color:rgba(127,82,60,1);
-	line-height:34px;
+	line-height:30px;
 
 }
 .infos-index-course-list li p{
 	margin-top: 9px;
-	height:20px;
+	height:50px;
 	font-size:20px;
 	color:rgba(51,51,51,1);
-	margin-bottom: 43px;
+	line-height: 25px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2;
 }
 .about-news li{
 	width:660px;

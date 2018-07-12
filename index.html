@@ -117,6 +117,21 @@
                     <a class="swiper-slide" href="javascript:;">
                         <img src="upload/idx-car1.png" alt="" />
                     </a>
+                    <div class="swiper-slide swiper-video-slide" >
+                        <video loop="loop" autoplay="autoplay" >
+                         <source src="http://www.runoob.com/try/demo_source/movie.mp4" type="video/mp4">
+                         <source src="http://www.runoob.com/try/demo_source/movie.mp4" type="video/ogg">
+                                                您的浏览器不支持Video标签。
+                        </video>
+                        <div class="msg">
+                            <h5 class="title">标题标题</h5>
+                            <p class="des">简短描述</p>
+                            <p class="btn-group">
+                                <a href="javascript:;" class="btn-link">了解更多</a>
+                                <a href="javascript:;" class="btn-video" onClick="playVideo(this)">观看完整视频</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -180,60 +195,63 @@
                             <li class="swiper-slide">
                                 <a href="javascript:;">
                                     <!-- 322 * 538 -->
-                                    <img src="upload/idx-lesson1.png"   />
+                                     <img data-src="path/to/picture-2.jpg" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                    <img  class="lazy" data-original="upload/idx-lesson1.png"/>
                                 </a>
                                 <a href="javascript:;">
-                                        <img src="upload/idx-lesson2.png" />
+                                        <img class="lazy" data-original="upload/idx-lesson2.png" />
                                     </a>
                                 <a href="javascript:;">
-                                        <img src="upload/idx-lesson3.png" />
+                                        <img  class="lazy" data-original="upload/idx-lesson3.png" />
                                 </a>
                             </li>
-                            <li class="swiper-slide">
-                                 <a href="javascript:;">
+                             <li class="swiper-slide">
+                                <a href="javascript:;">
                                     <!-- 322 * 538 -->
-                                    <img src="upload/idx-lesson1.png"   />
+                                    <img  class="lazy" data-original="upload/idx-lesson1.png"/>
                                 </a>
                                 <a href="javascript:;">
-                                        <img src="upload/idx-lesson2.png" />
+                                        <img class="lazy" data-original="upload/idx-lesson2.png" />
                                     </a>
                                 <a href="javascript:;">
-                                        <img src="upload/idx-lesson3.png" />
+                                        <img  class="lazy" data-original="upload/idx-lesson3.png" />
                                 </a>
                             </li>
                             <li class="swiper-slide">
                                 <a href="javascript:;">
-                                    
-                                    <img src="upload/idx-lesson1.png" />
+                                    <!-- 322 * 538 -->
+                                    <img  class="lazy" data-original="upload/idx-lesson1.png"/>
                                 </a>
                                 <a href="javascript:;">
-                                        <img src="upload/idx-lesson2.png" />
+                                        <img class="lazy" data-original="upload/idx-lesson2.png" />
                                     </a>
                                 <a href="javascript:;">
-                                        <img src="upload/idx-lesson3.png" />
-                                </a>
-                            </li>
-                           <li class="swiper-slide">
-                                 <a href="javascript:;">
-                                   
-                                    <img src="upload/idx-lesson1.png"/>
-                                <a href="javascript:;">
-                                        <img src="upload/idx-lesson2.png" />
-                                    </a>
-                                <a href="javascript:;">
-                                        <img src="upload/idx-lesson3.png" />
+                                        <img  class="lazy" data-original="upload/idx-lesson3.png" />
                                 </a>
                             </li>
                             <li class="swiper-slide">
-                                 <a href="javascript:;">
-                                    
-                                    <img src="upload/idx-lesson1.png" />
+                                <a href="javascript:;">
+                                    <!-- 322 * 538 -->
+                                    <img  class="lazy" data-original="upload/idx-lesson1.png"/>
                                 </a>
                                 <a href="javascript:;">
-                                        <img src="upload/idx-lesson2.png" />
+                                        <img class="lazy" data-original="upload/idx-lesson2.png" />
                                     </a>
                                 <a href="javascript:;">
-                                        <img src="upload/idx-lesson3.png" />
+                                        <img  class="lazy" data-original="upload/idx-lesson3.png" />
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="javascript:;">
+                                    <!-- 322 * 538 -->
+                                    <img  class="lazy" data-original="upload/idx-lesson1.png"/>
+                                </a>
+                                <a href="javascript:;">
+                                        <img class="lazy" data-original="upload/idx-lesson2.png" />
+                                    </a>
+                                <a href="javascript:;">
+                                        <img  class="lazy" data-original="upload/idx-lesson3.png" />
                                 </a>
                             </li>
                         </ul>
@@ -610,6 +628,7 @@
                     <div class="teachers-list">
                         <!-- 第一项默认初始化时添加行内样式 display:block -->
                         <div class="item item1" style="display: block;">
+
                             <a href="javascript:void(0);">
                                 <div class="img">
                                     <!-- 190 * 310 -->
@@ -1628,22 +1647,20 @@
         </div>
 
     </section>
-    
+    <div class="video-play-container">
+         <span class="mask-layer" onClick="closeVideo()"></span>
+         <div class="video-box" ></div>
+    </div>
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script src="js/jquery.lazyload.min.js"></script>
     <script type="text/javascript">
         $(function(){
-            $("img.lazy").lazyload({
-                 threshold : 200,
-                 effect : "fadeIn",
-                 failure_limit : 20,
-                 skip_invisible : false
-            });
+            
 
             //轮播
         var indexSlide = new Swiper('.swiper-banner', {
             direction: 'horizontal',
-            autoplay: 5000, //可选选项，自动滑动
+            //autoplay: 5000, //可选选项，自动滑动
             loop: true,
             autoplayDisableOnInteraction: false,
             pagination: '.swiper-pagination', // 分页器
@@ -1685,6 +1702,13 @@
             prevButton: '.swiper-button-prev',
             nextButton: '.swiper-button-next',
 
+        });
+
+        $("img.lazy").lazyload({
+                 threshold : 200,
+                 effect : "fadeIn",
+                 failure_limit : 20,
+                 skip_invisible : false
         });
 
         // 学员作品菜单切换
@@ -1745,7 +1769,30 @@
             $('.m-idx-message .menu-content .content.'+ tar).fadeIn().siblings().fadeOut();
         });
 
-    })    
+    }) 
+
+    function playVideo(obj){
+
+        var _t = $(obj);
+        var _video = _t.parents(".swiper-video-slide").find('video');
+
+        var _source = _video.find('source').attr('src');
+        if(!_source){
+            return;
+        }
+        var htmlVideo = '<span class="btn-close" onClick="closeVideo()"></span><video controls="controls" autoplay="autoplay">'
+                        +'<source src="'+_source+'" type="video/mp4">'                  
+                        +'您的浏览器不支持Video标签。</video>';
+        $('body').addClass('bodyfixed');
+        $('.video-play-container .video-box').html(htmlVideo);
+        $('.video-play-container').fadeIn();
+
+    }
+    function closeVideo(){
+        $('.video-play-container').fadeOut();
+        $('.video-play-container .video-box').html("");
+        $('body').removeClass('bodyfixed');
+    }
     </script>
     
     <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=A4749739227af1618f7b0d1b588c0e85&s=1"></script>
